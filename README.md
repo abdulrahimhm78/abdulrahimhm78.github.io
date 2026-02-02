@@ -13,7 +13,7 @@ https://www.linkedin.com/in/abdul-rahimhm/
 
 ## Executive Summary
 
-Senior Agile delivery leader with enterprise experience driving **predictable execution, flow efficiency, and delivery transparency** across complex, regulated, and multi-team environments.
+Senior SAFe Scrum Master and Agile Delivery Lead with a proven record of driving **predictable enterprise delivery, flow efficiency, and executive visibility** across complex, multi-team environments. I specialize in scaling delivery with metrics-driven execution and governance, aligning teams to business outcomes, and enabling leadership transparency—demonstrated through an Enterprise Agile Delivery Portfolio built for Fortune-500 standards.
 
 Operates effectively at:
 - Scrum team execution level
