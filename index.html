@@ -53,9 +53,6 @@
       margin-bottom: 10px;
       color: #0f172a;
     }
-    section p {
-      max-width: 800px;
-    }
     .card-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -73,6 +70,10 @@
       font-size: 1.1rem;
       color: #020617;
     }
+    .card p:last-child {
+      margin-top: 10px;
+      font-weight: bold;
+    }
     footer {
       background: #020617;
       color: #94a3b8;
@@ -83,13 +84,16 @@
   </style>
 </head>
 <body>
- <header>
-  <h1>Abdul Rahim Hakim Mohammed</h1>
-  <p>Senior SAFe Scrum Master | Agile Delivery Lead | Dallas, Texas, USA</p>
-  <p style="margin-top:8px; color:#cbd5e1;">
-    Driving predictable enterprise delivery across complex, regulated environments
-  </p>
-</header>
+  <!-- HEADER -->
+  <header>
+    <h1>Abdul Rahim Hakim Mohammed</h1>
+    <p>Senior SAFe Scrum Master | Agile Delivery Lead | Dallas, Texas, USA</p>
+    <p style="margin-top:8px; color:#cbd5e1;">
+      Driving predictable enterprise delivery across complex, regulated environments
+    </p>
+  </header>
+
+  <!-- NAVIGATION -->
   <nav>
     <a href="#about">Executive Overview</a>
     <a href="#scrum">Enterprise Scrum</a>
@@ -99,138 +103,184 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- MAIN CONTENT -->
   <main>
-   <section id="about">
-  <h2>Executive Overview</h2>
-  <p>
-    Senior Agile delivery leader with enterprise experience enabling predictable execution,
-    flow efficiency, and delivery transparency across complex, multi-team environments.
-  </p>
-  <p>
-    Specializes in Scrum, SAFe program execution, flow-based metrics, dependency management,
-    and Jira governance to support executive decision-making.
-  </p>
-</section>
+
+    <!-- EXECUTIVE OVERVIEW -->
+    <section id="about">
+      <h2>Executive Overview</h2>
+      <p>
+        Senior Agile delivery leader with enterprise experience enabling predictable execution,
+        flow efficiency, and delivery transparency across complex, multi-team environments.
+      </p>
+      <p>
+        Specializes in Scrum, SAFe program execution, flow-based metrics, dependency management,
+        and Jira governance to support executive decision-making.
+      </p>
+    </section>
+
+    <!-- ENTERPRISE SCRUM -->
     <section id="scrum">
       <h2>Enterprise Scrum Playbook</h2>
       <p>
-  Enterprise Scrum standards focused on execution discipline, accountability, and delivery stability.
-</p>
+        Enterprise Scrum standards focused on execution discipline, accountability, and delivery stability.
+      </p>
       <div class="card-grid">
         <div class="card">
-  <h3>Scrum Events</h3>
-  <p>Enterprise facilitation standards for Planning, Daily Scrum, Review, and Retrospective.</p>
-  <p>
-    <a href="https://github.com/abdulrahimhm78/enterprise-scrum-playbook" target="_blank">
-      View on GitHub →
-    </a>
-  </p>
-</div>
-<div class="card">
-  <h3>Roles & Accountability</h3>
-  <p>Clear enterprise accountability for Scrum Master and Product Owner roles.</p>
-  <p>
-    <a href="https://github.com/abdulrahimhm78/enterprise-scrum-playbook" target="_blank">
-      View on GitHub →
-    </a>
-  </p>
-</div>
-<div class="card">
-  <h3>Delivery Standards</h3>
- <p>Definition of Ready and Definition of Done used to stabilize enterprise delivery.</p>
-  <p>
-    <a href="https://github.com/abdulrahimhm78/enterprise-scrum-playbook" target="_blank">
-      View on GitHub →
-    </a>
-  </p>
-</div>
-
+          <h3>Scrum Events</h3>
+          <p>Enterprise facilitation standards for Planning, Daily Scrum, Review, Retrospective.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/enterprise-scrum-playbook" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Roles & Accountability</h3>
+          <p>Clear enterprise accountability for Scrum Master and Product Owner roles.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/enterprise-scrum-playbook" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Delivery Standards</h3>
+          <p>Definition of Ready and Definition of Done used to stabilize enterprise delivery.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/enterprise-scrum-playbook" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
-<section id="metrics">
-  <p> Metrics focused on predictability, flow efficiency, and delivery health—not vanity reporting.</p>
-<h2>https://github.com/abdulrahimhm78/agile-metrics-and-flow</h2>
+
+    <!-- METRICS & FLOW -->
+    <section id="metrics">
+      <h2>Agile Metrics & Flow</h2>
+      <p>
+        Metrics focused on predictability, flow efficiency, and delivery health—not vanity reporting.
+      </p>
       <div class="card-grid">
         <div class="card">
           <h3>Flow Metrics</h3>
-          <p>Throughput and cycle time to improve predictability.</p>
+          <p>Throughput and cycle time for delivery insight.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/agile-metrics-and-flow" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
         </div>
         <div class="card">
           <h3>Delivery Health</h3>
-          <p>Predictability and quality indicators for leadership insight.</p>
+          <p>Predictability and stability signals for enterprise teams.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/agile-metrics-and-flow" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
         </div>
         <div class="card">
           <h3>Capacity Planning</h3>
-          <p>Realistic forecasting based on availability and constraints.</p>
+          <p>Sustainable planning based on constraints and availability.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/agile-metrics-and-flow" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
         </div>
       </div>
     </section>
-<section id="scaled">
-  <h2>Scaled Agile Delivery</h2>
-  <p>Program-level execution aligned to SAFe, supporting multi-team coordination and leadership visibility.</p>
-  <div class="card-grid">
-    ...
-  </div>
-</section>
-<div class="card">
-  <h3>PI Planning</h3>
-  <p>Preparation, Day 1, and Day 2 facilitation standards.</p>
-  <p>
-    <a href="https://github.com/abdulrahimhm78/scaled-agile-delivery" target="_blank">
-      View on GitHub →
-    </a>
-  </p>
-</div>
 
-<div class="card">
-  <h3>Dependencies & Risks</h3>
-  <p>Identification, tracking, and escalation frameworks.</p>
-  <p>
-    <a href="https://github.com/abdulrahimhm78/scaled-agile-delivery" target="_blank">
-      View on GitHub →
-    </a>
-  </p>
-</div>
-<div class="card">
-  <h3>Program Visibility</h3>
-  <p>Executive status and metrics summaries.</p>
-  <p>
-    <a href="https://github.com/abdulrahimhm78/scaled-agile-delivery" target="_blank">
-      View on GitHub →
-    </a>
-  </p>
-</div>
+    <!-- SCALED AGILE DELIVERY -->
+    <section id="scaled">
+      <h2>Scaled Agile Delivery</h2>
+      <p>
+        Program-level execution aligned to SAFe, supporting multi-team coordination and leadership visibility.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>PI Planning</h3>
+          <p>Preparation, planning day facilitation, and commitments.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/scaled-agile-delivery" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Dependencies & Risks</h3>
+          <p>Identification, tracking, and escalation frameworks.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/scaled-agile-delivery" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Program Visibility</h3>
+          <p>Executive status and metrics summaries.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/scaled-agile-delivery" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
+        </div>
+      </div>
     </section>
 
+    <!-- JIRA GOVERNANCE -->
     <section id="jira">
       <h2>Jira Governance</h2>
-      <p>Enterprise Jira governance ensuring consistency, transparency, and decision-ready reporting.</p>
+      <p>
+        Enterprise Jira governance ensuring consistency, transparency, and decision-ready reporting.
+      </p>
       <div class="card-grid">
         <div class="card">
           <h3>Board Standards</h3>
-          <p>Scrum and Kanban board configuration best practices.</p>
+          <p>Scrum and Kanban board design and policies.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/jira-governance" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
         </div>
         <div class="card">
           <h3>Workflow Governance</h3>
-          <p>Issue types and workflow rules for consistency.</p>
+          <p>Workflow rules and issue-type governance.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/jira-governance" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
         </div>
         <div class="card">
           <h3>Backlog & Reporting</h3>
-          <p>Backlog hygiene and executive dashboard standards.</p>
+          <p>Backlog hygiene and executive dashboards.</p>
+          <p>
+            <a href="https://github.com/abdulrahimhm78/jira-governance" target="_blank">
+              View on GitHub →
+            </a>
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
-  <h2>Contact</h2>
-  <p>
-    For senior delivery leadership, enterprise Agile transformation, and program execution discussions:
-  </p>
-  <p>
-    LinkedIn: <a href="https://www.linkedin.com/in/abdul-rahimhm/" target="_blank">linkedin.com/in/abdul-rahimhm</a>
-  </p>
-</section>
+      <h2>Contact</h2>
+      <p>
+        For senior delivery leadership, enterprise Agile transformation, and program execution discussions:
+      </p>
+      <p>
+        LinkedIn: <a href="https://www.linkedin.com/in/abdul-rahimhm/" target="_blank">linkedin.com/in/abdul-rahimhm</a>
+      </p>
+    </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
     © 2026 Abdul Rahim Hakim Mohammed. Enterprise Agile Delivery.
   </footer>
