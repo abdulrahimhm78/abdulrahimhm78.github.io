@@ -16,11 +16,9 @@ content="Senior SAFe Scrum Master and Agile Delivery Lead with Fortune 500 resul
   --bg:#f9fafb;
   --ink:#0f172a;
   --muted:#475569;
-
   --brand:#2563eb;
   --brand-dark:#1e40af;
   --brand-soft:#e0e7ff;
-
   --panel:#ffffff;
   --header:#020617;
   --nav-border:#1e293b;
@@ -34,10 +32,8 @@ body{
   background:var(--bg);
   color:var(--ink);
   line-height:1.65;
-  -webkit-font-smoothing:antialiased;
 }
 
-/* ===== CONTAINERS ===== */
 .container{
   max-width:1180px;
   margin:auto;
@@ -46,13 +42,12 @@ body{
 
 /* ===== HEADER ===== */
 header{
-  background:linear-gradient(180deg,#020617,#020617 70%,#020617ee);
+  background:linear-gradient(180deg,#020617,#020617ee);
   color:#fff;
 }
 
 header .container{
-  padding-top:64px;
-  padding-bottom:36px;
+  padding:64px 56px 36px;
 }
 
 header h1{
@@ -94,7 +89,6 @@ nav{
   font-weight:500;
   padding:8px 0;
   border-bottom:2px solid transparent;
-  transition:.2s ease;
 }
 
 .nav-links a:hover{
@@ -115,32 +109,18 @@ main{
 }
 
 section{
-  margin-bottom:88px;
+  margin-bottom:96px;
 }
 
-/* ===== HERO ===== */
 .banner{
   background:linear-gradient(135deg,var(--brand),var(--brand-dark));
   color:#fff;
-  padding:42px 44px;
-  border-radius:20px;
-  box-shadow:0 20px 40px rgba(37,99,235,.25);
+  padding:44px;
+  border-radius:22px;
 }
 
-.banner h2{
-  font-size:1.85rem;
-  margin:0 0 10px;
-}
-
-.banner p{
-  font-size:1.05rem;
-  color:#e0e7ff;
-  max-width:720px;
-}
-
-/* ===== TYPOGRAPHY ===== */
 h2{
-  font-size:1.8rem;
+  font-size:1.85rem;
   margin:0 0 18px;
 }
 
@@ -149,7 +129,7 @@ h3{
   margin:0 0 6px;
 }
 
-section p{
+p{
   max-width:760px;
   color:#334155;
 }
@@ -187,11 +167,6 @@ section p{
   border-radius:16px;
   font-weight:600;
   text-decoration:none;
-  box-shadow:0 10px 20px rgba(37,99,235,.3);
-}
-
-.cta:hover{
-  background:#1d4ed8;
 }
 
 .cta.alt{
@@ -207,16 +182,9 @@ footer{
   padding:32px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media(max-width:768px){
   .container, main{
     padding:40px 28px;
-  }
-  header h1{
-    font-size:2rem;
-  }
-  .nav-links{
-    gap:22px;
   }
 }
 </style>
@@ -237,7 +205,8 @@ footer{
     <ul class="nav-links">
       <li><a href="#overview">Overview</a></li>
       <li><a href="#case">Case Study</a></li>
-      <li><a href="#value">Why Hire</a></li>
+      <li><a href="#seo">LinkedIn SEO</a></li>
+      <li><a href="#authority">Authority</a></li>
       <li><a class="highlight" href="#resume">ATS Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -247,8 +216,8 @@ footer{
 <main>
 
 <section class="banner">
-  <h2>Fortune 500 Agile Delivery Leadership</h2>
-  <p>Stabilizing complex delivery ecosystems, restoring predictability, and rebuilding executive confidence.</p>
+  <h2>Inbound Hiring, Not Job Applications</h2>
+  <p>Designed to be found by recruiters, not filtered by automation.</p>
 </section>
 
 <section id="overview">
@@ -278,42 +247,55 @@ footer{
   </div>
 </section>
 
-<section id="value">
-  <h2>Why Fortune 500 Organizations Hire Me</h2>
+<section id="seo">
+  <h2>LinkedIn SEO – How Recruiters Find Me</h2>
+  <div class="card">
+    <p><strong>Exact-match search terms recruiters use:</strong></p>
+    <ul>
+      <li>Senior Scrum Master</li>
+      <li>SAFe Scrum Master</li>
+      <li>Agile Delivery Lead</li>
+      <li>PI Planning Execution</li>
+      <li>Jira Governance</li>
+      <li>Enterprise Agile Transformation</li>
+    </ul>
+    <p>
+      Keywords are intentionally consistent across headline, summary, experience titles, and descriptions
+      to rank in recruiter search results.
+    </p>
+  </div>
+</section>
+
+<section id="authority">
+  <h2>Authority & Conversion Engine</h2>
   <div class="grid">
     <div class="card">
-      <h3>Delivery Predictability</h3>
-      <p>Flow-based outcomes over velocity theater.</p>
+      <h3>Measurable Impact</h3>
+      <p>25% delivery predictability improvement, reduced rework, stabilized PI execution.</p>
     </div>
     <div class="card">
-      <h3>SAFe at Scale</h3>
-      <p>End-to-end PI execution and recovery.</p>
+      <h3>Executive Trust Signals</h3>
+      <p>Flow metrics, dependency recovery, decision-ready reporting.</p>
     </div>
     <div class="card">
-      <h3>Governance & Hygiene</h3>
-      <p>Executive-grade Jira and reporting discipline.</p>
-    </div>
-    <div class="card">
-      <h3>Decision Enablement</h3>
-      <p>Clear signals for leadership action.</p>
+      <h3>Power Content Strategy</h3>
+      <p>
+        Content follows Hook → Rehook → Value → CTA to build visibility,
+        credibility, and inbound recruiter interest.
+      </p>
     </div>
   </div>
 </section>
 
 <section id="resume">
   <h2>ATS-Optimized Resume (Inline)</h2>
-  <p>
-    Resume content is intentionally embedded in this page to ensure zero broken links
-    and maximum ATS compatibility. A downloadable PDF can be provided on request.
-  </p>
   <div class="card">
-    <strong>Core Strengths:</strong>
     <ul>
       <li>SAFe PI Planning & Execution</li>
       <li>Flow Metrics & Predictability</li>
-      <li>Jira / ADO Governance</li>
-      <li>Dependency & Risk Recovery</li>
-      <li>Executive Delivery Reporting</li>
+      <li>Dependency & Risk Management</li>
+      <li>Jira / Azure DevOps Governance</li>
+      <li>Executive Delivery Health Reporting</li>
     </ul>
   </div>
 </section>
@@ -321,14 +303,13 @@ footer{
 <section id="contact">
   <h2>Contact – Recruiters & Hiring Managers</h2>
   <p>
-    Available for <strong>Senior Scrum Master, Agile Delivery Lead, and SAFe advisory engagements</strong>.
+    Available for Senior Scrum Master, Agile Delivery Lead, and SAFe advisory roles.
     Contract, C2C, W2, or full-time.
   </p>
-
   <a class="cta alt"
      href="https://www.linkedin.com/in/abdul-rahimhm/"
      target="_blank">
-     Message via LinkedIn (Preferred)
+     Message via LinkedIn
   </a>
 </section>
 
