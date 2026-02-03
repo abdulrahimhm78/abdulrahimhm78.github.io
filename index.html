@@ -95,6 +95,11 @@ color:#fff;
 border-bottom-color:var(--brand)
 }
 
+.nav-links .highlight{
+color:#60a5fa;
+font-weight:600
+}
+
 /* ===== MAIN ===== */
 main{
 max-width:1200px;
@@ -192,14 +197,25 @@ padding:28px
       <li><a href="#overview">Overview</a></li>
       <li><a href="#case">Case Study</a></li>
       <li><a href="#value">Why Hire</a></li>
+
+      <!-- ✅ FIXED ATS LINK (HTML FIRST – NO 404) -->
+      <li>
+        <a href="/resume-ats.html" class="highlight">
+          ATS Resume
+        </a>
+      </li>
+
+      <!-- OPTIONAL PDF FALLBACK (enable only if file exists)
       <li>
         <a href="/assets/Abdul_Rahim_ATS_Resume.pdf"
            target="_blank"
            rel="noopener"
-           style="color:#60a5fa;font-weight:600">
-           ATS Resume
+           class="highlight">
+          ATS Resume (PDF)
         </a>
       </li>
+      -->
+
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -215,9 +231,9 @@ padding:28px
 <section id="overview">
   <h2>Executive Overview</h2>
   <p>
-  Senior SAFe Scrum Master with a proven record of stabilizing large-scale, regulated enterprise delivery.
-  Specializes in PI Planning execution, dependency recovery, flow-based metrics, Jira governance,
-  and executive delivery health reporting.
+    Senior SAFe Scrum Master with a proven record of stabilizing large-scale, regulated enterprise delivery.
+    Specializes in PI Planning execution, dependency recovery, flow-based metrics, Jira governance,
+    and executive delivery health reporting.
   </p>
 </section>
 
@@ -270,7 +286,8 @@ padding:28px
 
   <a class="cta alt"
      href="https://www.linkedin.com/in/abdul-rahimhm/"
-     target="_blank">
+     target="_blank"
+     rel="noopener">
      Message via LinkedIn (Preferred)
   </a>
 </section>
