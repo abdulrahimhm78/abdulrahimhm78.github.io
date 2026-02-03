@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,183 +11,206 @@ content="Senior SAFe Scrum Master and Agile Delivery Lead with Fortune 500 resul
 
 <link rel="canonical" href="https://abdulrahimhm78.github.io/">
 
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+
+<!-- =====================
+ DESIGN SYSTEM
+===================== -->
 <style>
 :root{
-  --bg:#f9fafb;
-  --ink:#0f172a;
-  --muted:#475569;
-  --brand:#2563eb;
-  --brand-dark:#1e40af;
-  --brand-soft:#e0e7ff;
-  --panel:#ffffff;
-  --header:#020617;
-  --nav-border:#1e293b;
+--bg:#f8fafc;
+--ink:#020617;
+--muted:#475569;
+--brand:#2563eb;
+--brand-dark:#1e40af;
+--accent:#16a34a;
+--panel:#ffffff;
+--nav:#020617;
+--nav-border:#1e293b
 }
 
 *{box-sizing:border-box}
 
 body{
-  margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  background:var(--bg);
-  color:var(--ink);
-  line-height:1.65;
+margin:0;
+font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+background:var(--bg);
+color:var(--ink);
+line-height:1.65
 }
 
 .container{
-  max-width:1180px;
-  margin:auto;
-  padding:0 56px;
+max-width:1200px;
+margin:auto;
+padding:0 56px
 }
 
-/* ===== HEADER ===== */
+/* =====================
+ HEADER
+===================== */
 header{
-  background:linear-gradient(180deg,#020617,#020617ee);
-  color:#fff;
+background:linear-gradient(135deg,#020617,#020617);
+color:#fff
 }
 
 header .container{
-  padding:64px 56px 36px;
+padding-top:64px;
+padding-bottom:40px
 }
 
 header h1{
-  margin:0;
-  font-size:2.4rem;
-  letter-spacing:-.03em;
+margin:0;
+font-size:2.4rem;
+letter-spacing:-.02em
 }
 
 header p{
-  margin:.45rem 0;
-  color:#c7d2fe;
-  font-size:.95rem;
+margin:.4rem 0;
+color:#cbd5f5
 }
 
-/* ===== NAV ===== */
+/* =====================
+ NAV
+===================== */
 nav{
-  background:#020617;
-  border-top:1px solid var(--nav-border);
+background:var(--nav);
+border-top:1px solid var(--nav-border)
 }
 
 .nav-inner{
-  display:flex;
-  align-items:center;
-  min-height:64px;
+display:flex;
+align-items:center;
+min-height:64px
 }
 
 .nav-links{
-  display:flex;
-  gap:36px;
-  list-style:none;
-  margin:0;
-  padding:0;
+display:flex;
+gap:36px;
+list-style:none;
+margin:0;
+padding:0
 }
 
 .nav-links a{
-  color:#e5e7eb;
-  text-decoration:none;
-  font-size:.9rem;
-  font-weight:500;
-  padding:8px 0;
-  border-bottom:2px solid transparent;
+color:#e5e7eb;
+text-decoration:none;
+font-size:.9rem;
+font-weight:500;
+padding:6px 0;
+border-bottom:2px solid transparent
 }
 
 .nav-links a:hover{
-  color:#fff;
-  border-bottom-color:var(--brand);
+color:#fff;
+border-bottom-color:var(--brand)
 }
 
-.nav-links .highlight{
-  color:#93c5fd;
-  font-weight:600;
-}
-
-/* ===== MAIN ===== */
+/* =====================
+ MAIN
+===================== */
 main{
-  max-width:1180px;
-  margin:auto;
-  padding:72px 56px;
+max-width:1200px;
+margin:auto;
+padding:64px 56px
 }
 
-section{
-  margin-bottom:96px;
-}
+section{margin-bottom:88px}
 
 .banner{
-  background:linear-gradient(135deg,var(--brand),var(--brand-dark));
-  color:#fff;
-  padding:44px;
-  border-radius:22px;
+background:linear-gradient(135deg,var(--brand),var(--brand-dark));
+color:#fff;
+padding:36px;
+border-radius:20px
 }
 
 h2{
-  font-size:1.85rem;
-  margin:0 0 18px;
+font-size:1.75rem;
+margin:0 0 16px
 }
 
 h3{
-  font-size:1.05rem;
-  margin:0 0 6px;
+font-size:1.05rem;
+margin:0 0 6px
 }
 
-p{
-  max-width:760px;
-  color:#334155;
-}
-
-/* ===== GRID ===== */
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:28px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:28px
 }
 
 .card{
-  background:var(--panel);
-  padding:30px;
-  border-radius:20px;
-  box-shadow:0 12px 30px rgba(2,6,23,.06);
+background:var(--panel);
+padding:28px;
+border-radius:20px;
+box-shadow:0 10px 26px rgba(0,0,0,.06)
 }
 
-/* ===== TIMELINE ===== */
-.timeline{
-  border-left:3px solid var(--brand);
-  padding-left:26px;
-}
-
-.timeline div{
-  margin-bottom:30px;
-}
-
-/* ===== CTA ===== */
+/* =====================
+ CTA
+===================== */
 .cta{
-  display:inline-block;
-  background:var(--brand);
-  color:#fff;
-  padding:16px 30px;
-  border-radius:16px;
-  font-weight:600;
-  text-decoration:none;
+display:inline-block;
+background:var(--brand);
+color:#fff;
+padding:14px 28px;
+border-radius:14px;
+font-weight:600;
+text-decoration:none
 }
 
-.cta.alt{
-  background:#16a34a;
+.cta:hover{background:#1d4ed8}
+
+.cta.alt{background:var(--accent)}
+
+/* =====================
+ TIMELINE
+===================== */
+.timeline{
+border-left:3px solid var(--brand);
+padding-left:22px
 }
 
-/* ===== FOOTER ===== */
+.timeline div{margin-bottom:28px}
+
+/* =====================
+ FOOTER
+===================== */
 footer{
-  background:#020617;
-  color:#94a3b8;
-  text-align:center;
-  font-size:.75rem;
-  padding:32px;
+background:#020617;
+color:#94a3b8;
+text-align:center;
+font-size:.75rem;
+padding:32px
 }
 
+/* =====================
+ RESPONSIVE
+===================== */
 @media(max-width:768px){
-  .container, main{
-    padding:40px 28px;
-  }
+.container,main{padding:32px}
+.nav-links{gap:22px}
 }
 </style>
+
+<!-- =====================
+ RECRUITER + AI SCHEMA
+===================== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Abdul Rahim Hakim Mohammed",
+  "jobTitle":"Senior SAFe Scrum Master",
+  "description":"Senior SAFe Scrum Master and Agile Delivery Lead specializing in PI Planning, flow metrics, Jira governance, dependency recovery, and executive delivery visibility.",
+  "url":"https://abdulrahimhm78.github.io/",
+  "sameAs":["https://www.linkedin.com/in/abdul-rahimhm/"],
+  "knowsAbout":[
+    "SAFe","Scrum","Agile Delivery","PI Planning",
+    "Flow Metrics","Jira Governance","Enterprise Agile Transformation"
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -205,9 +228,12 @@ footer{
     <ul class="nav-links">
       <li><a href="#overview">Overview</a></li>
       <li><a href="#case">Case Study</a></li>
-      <li><a href="#seo">LinkedIn SEO</a></li>
-      <li><a href="#authority">Authority</a></li>
-      <li><a class="highlight" href="#resume">ATS Resume</a></li>
+      <li><a href="#value">Why Hire</a></li>
+      <li>
+        <a href="#ats-resume" style="color:#60a5fa;font-weight:600">
+          ATS Resume
+        </a>
+      </li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -216,8 +242,8 @@ footer{
 <main>
 
 <section class="banner">
-  <h2>Inbound Hiring, Not Job Applications</h2>
-  <p>Designed to be found by recruiters, not filtered by automation.</p>
+  <h2>Fortune 500 Agile Delivery Leadership</h2>
+  <p>Stabilizing complex delivery ecosystems, restoring predictability, and rebuilding executive confidence.</p>
 </section>
 
 <section id="overview">
@@ -247,63 +273,63 @@ footer{
   </div>
 </section>
 
-<section id="seo">
-  <h2>LinkedIn SEO – How Recruiters Find Me</h2>
-  <div class="card">
-    <p><strong>Exact-match search terms recruiters use:</strong></p>
-    <ul>
-      <li>Senior Scrum Master</li>
-      <li>SAFe Scrum Master</li>
-      <li>Agile Delivery Lead</li>
-      <li>PI Planning Execution</li>
-      <li>Jira Governance</li>
-      <li>Enterprise Agile Transformation</li>
-    </ul>
-    <p>
-      Keywords are intentionally consistent across headline, summary, experience titles, and descriptions
-      to rank in recruiter search results.
-    </p>
-  </div>
-</section>
-
-<section id="authority">
-  <h2>Authority & Conversion Engine</h2>
+<section id="value">
+  <h2>Why Fortune 500 Organizations Hire Me</h2>
   <div class="grid">
     <div class="card">
-      <h3>Measurable Impact</h3>
-      <p>25% delivery predictability improvement, reduced rework, stabilized PI execution.</p>
+      <h3>Delivery Predictability</h3>
+      <p>Flow-based outcomes over velocity theater.</p>
     </div>
     <div class="card">
-      <h3>Executive Trust Signals</h3>
-      <p>Flow metrics, dependency recovery, decision-ready reporting.</p>
+      <h3>SAFe at Scale</h3>
+      <p>End-to-end PI execution and recovery.</p>
     </div>
     <div class="card">
-      <h3>Power Content Strategy</h3>
-      <p>
-        Content follows Hook → Rehook → Value → CTA to build visibility,
-        credibility, and inbound recruiter interest.
-      </p>
+      <h3>Governance & Hygiene</h3>
+      <p>Executive-grade Jira and reporting discipline.</p>
+    </div>
+    <div class="card">
+      <h3>Decision Enablement</h3>
+      <p>Clear signals for leadership action.</p>
     </div>
   </div>
 </section>
 
-<section id="resume">
-  <h2>ATS-Optimized Resume (Inline)</h2>
-  <div class="card">
-    <ul>
-      <li>SAFe PI Planning & Execution</li>
-      <li>Flow Metrics & Predictability</li>
-      <li>Dependency & Risk Management</li>
-      <li>Jira / Azure DevOps Governance</li>
-      <li>Executive Delivery Health Reporting</li>
-    </ul>
+<section id="linkedin-content">
+  <h2>LinkedIn Power Content (Inbound Engine)</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Authority Hook</h3>
+      <p>Most delivery failures aren’t execution problems. They’re visibility failures.</p>
+    </div>
+    <div class="card">
+      <h3>Credibility Signal</h3>
+      <p>Velocity doesn’t predict outcomes. Flow does.</p>
+    </div>
+    <div class="card">
+      <h3>Recruiter Magnet</h3>
+      <p>Applying to jobs loses to being found by search.</p>
+    </div>
   </div>
+</section>
+
+<section id="ats-resume">
+  <h2>ATS-Optimized Resume</h2>
+  <p>
+    Resume access is intentionally integrated into this site to avoid broken links and tracking loss.
+    Recruiters may request a PDF directly via LinkedIn.
+  </p>
+  <a class="cta"
+     href="https://www.linkedin.com/in/abdul-rahimhm/"
+     target="_blank">
+     Request Resume via LinkedIn
+  </a>
 </section>
 
 <section id="contact">
   <h2>Contact – Recruiters & Hiring Managers</h2>
   <p>
-    Available for Senior Scrum Master, Agile Delivery Lead, and SAFe advisory roles.
+    Available for <strong>Senior Scrum Master, Agile Delivery Lead, and SAFe advisory engagements</strong>.
     Contract, C2C, W2, or full-time.
   </p>
   <a class="cta alt"
