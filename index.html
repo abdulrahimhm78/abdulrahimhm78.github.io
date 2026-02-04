@@ -18,18 +18,14 @@ content="Senior SAFe Scrum Master with 18+ years of experience delivering predic
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-/* ===============================
-   EXECUTIVE UNIFORM COLOR SYSTEM
-   =============================== */
 :root{
---bg:#f9fafb;          /* page background */
---panel:#ffffff;       /* cards */
---ink:#111827;         /* primary text */
---muted:#4b5563;       /* secondary text */
---brand:#2563eb;       /* primary accent */
---header:#1f2937;      /* header background */
---border:#e5e7eb;      /* borders */
---soft:#f3f4f6;        /* subtle section background */
+--bg:#f9fafb;
+--panel:#ffffff;
+--ink:#111827;
+--muted:#4b5563;
+--brand:#2563eb;
+--header:#1f2937;
+--border:#e5e7eb;
 }
 
 *{box-sizing:border-box}
@@ -42,65 +38,54 @@ color:var(--ink);
 line-height:1.65;
 }
 
-/* ===============================
-   LAYOUT
-   =============================== */
 .container{
 max-width:1120px;
 margin:auto;
 padding:0 24px;
 }
 
-/* ===============================
-   HEADER
-   =============================== */
 header{
 background:var(--header);
 color:#ffffff;
 border-bottom:1px solid rgba(255,255,255,.08);
 }
+
 .header-inner{
 padding:36px 0 32px;
 }
+
 header h1{
 margin:0 0 6px;
 font-size:2.4rem;
 font-weight:900;
 }
+
 header p{
 margin:4px 0;
 color:#d1d5db;
 }
+
 header .title{
 color:#ffffff;
 font-weight:700;
 }
 
-/* ===============================
-   MAIN CONTENT
-   =============================== */
 main{
 padding:40px 0 0;
 }
 
-/* ===============================
-   SECTIONS
-   =============================== */
 section{
 margin-bottom:48px;
 }
+
 section h2{
 margin:0 0 16px;
 font-size:1.4rem;
 font-weight:900;
 border-left:4px solid var(--brand);
 padding-left:12px;
-color:var(--ink);
 }
 
-/* ===============================
-   CARDS
-   =============================== */
 .card{
 background:var(--panel);
 border:1px solid var(--border);
@@ -108,32 +93,27 @@ border-radius:14px;
 padding:26px;
 }
 
-/* ===============================
-   RECRUITER FUNNEL
-   =============================== */
 .funnel{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:22px;
 }
+
 .funnel h3{
 margin:0 0 12px;
 font-size:1.05rem;
 font-weight:800;
-color:var(--ink);
 }
+
 .funnel ul{
 margin:0;
 padding-left:18px;
 }
+
 .funnel li{
 margin-bottom:6px;
-color:var(--ink);
 }
 
-/* ===============================
-   BUTTONS
-   =============================== */
 .btn{
 display:inline-block;
 margin-top:16px;
@@ -142,53 +122,49 @@ border-radius:10px;
 font-weight:800;
 text-decoration:none;
 }
+
 .btn-primary{
 background:var(--brand);
 color:#ffffff;
 }
+
 .btn-secondary{
 background:var(--panel);
 border:1px solid var(--border);
 color:var(--ink);
 }
 
-/* ===============================
-   EXPERIENCE
-   =============================== */
 .job{
 margin-bottom:36px;
 }
+
 .job h3{
 margin:0 0 6px;
 font-size:1.1rem;
 font-weight:800;
-color:var(--ink);
 }
+
 .job .meta{
 color:var(--muted);
 font-size:.9rem;
 margin-bottom:10px;
 }
+
 .job ul{
 margin:6px 0 0;
 padding-left:18px;
 }
+
 .job li{
 margin-bottom:6px;
 }
 
-/* ===============================
-   COLUMNS
-   =============================== */
 .columns{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:22px;
 }
 
-/* ===============================
-   FOOTER
-   =============================== */
 footer{
 border-top:1px solid var(--border);
 margin-top:56px;
@@ -199,9 +175,6 @@ color:var(--muted);
 background:var(--panel);
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
 @media (max-width:820px){
 .funnel{grid-template-columns:1fr}
 .columns{grid-template-columns:1fr}
@@ -358,38 +331,10 @@ header h1{font-size:2rem}
 </section>
 
 <section>
-  <h2>Skills, Tools & Frameworks</h2>
-  <div class="card columns">
-    <ul>
-      <li>Scrum, SAFe, Kanban, Scrumban, Scrum of Scrums</li>
-      <li>PI Planning, Inspect & Adapt, Flow Metrics</li>
-      <li>Capacity Planning, Forecasting</li>
-      <li>Dependency & Risk Management</li>
-    </ul>
-    <ul>
-      <li>Jira, Jira Align, Azure DevOps</li>
-      <li>Confluence, MS Teams, Zoom</li>
-      <li>Cloud & Platform Delivery</li>
-      <li>Regulated / Compliance Environments</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Certifications</h2>
-  <div class="card">
-    <ul>
-      <li>PMP® — Project Management Institute</li>
-      <li>PMI Certified Agile Coach</li>
-      <li>SAFe® 6 Agileist</li>
-      <li>PSM™, PSPO™, PAL™ — Scrum.org</li>
-    </ul>
-  </div>
-</section>
-
-<section>
   <h2>Resume</h2>
-  <a class="btn btn-primary" href="resume.pdf" target="_blank">
+  <a class="btn btn-primary"
+     href="Abdul_Rahim_Resume.pdf"
+     target="_blank" rel="noopener">
     Download Resume (PDF)
   </a>
 </section>
