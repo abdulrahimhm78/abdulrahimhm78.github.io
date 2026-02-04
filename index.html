@@ -15,16 +15,17 @@ content="Senior SAFe Scrum Master with 18+ years delivering predictable outcomes
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 :root{
---bg:#f9fafb;
+--bg:#f8fafc;
+--panel:#ffffff;
 --ink:#020617;
 --muted:#475569;
---brand:#2563eb;
+--brand:#1d4ed8;
 --dark:#020617;
---panel:#0b1220;
+--border:#e5e7eb;
 }
 
 *{box-sizing:border-box}
@@ -34,248 +35,231 @@ margin:0;
 font-family:Inter,Arial,sans-serif;
 background:var(--bg);
 color:var(--ink);
-line-height:1.45;
+line-height:1.5;
 }
 
+/* Layout */
 .container{
-max-width:1180px;
+max-width:1100px;
 margin:auto;
 padding:0 24px;
 }
 
-/* ===== TOP BANNER ===== */
-.top-banner{
-background:#020617;
-}
-.top-banner img{
-width:100%;
-height:auto;
-display:block;
-max-height:360px;
-object-fit:cover;
-}
-
-/* ===== HEADER ===== */
+/* Header */
 header{
-background:linear-gradient(180deg,#020617 0%,#020617 100%);
-color:#fff;
-padding:36px 0 32px; /* tightened */
+background:var(--dark);
+color:#ffffff;
+border-bottom:1px solid rgba(255,255,255,.08);
 }
-
-header p{margin:6px 0;color:#cbd5f5}
-
-h1{
-font-size:2.6rem;
-font-weight:900;
+.header-inner{
+padding:32px 0 28px;
+}
+header h1{
 margin:0 0 6px;
-}
-
-h2{
-margin:40px 0 12px; /* tightened */
+font-size:2.4rem;
 font-weight:900;
 }
-
-h3{
-margin:26px 0 8px; /* tightened */
-font-weight:800;
-}
-
-p{margin:8px 0}
-ul{padding-left:18px;margin:6px 0}
-li{margin-bottom:6px}
-
-/* ===== CTA ===== */
-.cta{
-display:inline-block;
-margin-top:12px;
-padding:14px 24px;
-background:var(--brand);
-color:#fff;
-border-radius:10px;
-text-decoration:none;
-font-weight:900;
-}
-
-/* ===== RECRUITER FUNNEL ===== */
-.recruiter-funnel{
-margin:48px 0; /* reduced */
-}
-
-.funnel-card{
-background:linear-gradient(135deg,#020617,#0b1220);
-color:#fff;
-padding:32px; /* reduced */
-border-radius:18px;
-box-shadow:0 20px 50px rgba(0,0,0,.30);
-}
-
-.funnel-sub{
+header p{
+margin:4px 0;
 color:#cbd5f5;
-margin:6px 0 20px;
+}
+header .title{
+color:#ffffff;
+font-weight:700;
 }
 
-.funnel-grid{
+/* Main */
+main{
+padding:36px 0 0;
+}
+
+/* Sections */
+section{
+margin-bottom:40px;
+}
+section h2{
+margin:0 0 14px;
+font-size:1.35rem;
+font-weight:900;
+border-left:4px solid var(--brand);
+padding-left:12px;
+}
+
+/* Cards */
+.card{
+background:var(--panel);
+border:1px solid var(--border);
+border-radius:14px;
+padding:24px;
+}
+
+/* Funnel */
+.funnel{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:1fr 1fr;
 gap:20px;
 }
-
-.funnel-box{
-background:#020617;
-border-radius:14px;
-padding:22px;
-box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);
-}
-
-.funnel-box h3{
+.funnel h3{
 margin:0 0 10px;
-font-weight:900;
+font-size:1.05rem;
+font-weight:800;
+}
+.funnel ul{
+margin:0;
+padding-left:18px;
+}
+.funnel li{
+margin-bottom:6px;
 }
 
-.funnel-box li{
-color:#e5e7eb;
-}
-
-.funnel-btn{
+/* Buttons */
+.btn{
 display:inline-block;
-margin-top:10px;
-padding:12px 18px;
-border-radius:8px;
-font-weight:900;
+margin-top:14px;
+padding:12px 20px;
+border-radius:10px;
+font-weight:800;
 text-decoration:none;
+}
+.btn-primary{
+background:var(--brand);
+color:#ffffff;
+}
+.btn-secondary{
 background:#ffffff;
-color:#020617;
+border:1px solid var(--border);
+color:var(--ink);
 }
 
-/* ===== FOOTER ===== */
+/* Experience */
+.job{
+margin-bottom:26px;
+}
+.job h3{
+margin:0 0 6px;
+font-size:1.05rem;
+font-weight:800;
+}
+.job ul{
+margin:6px 0 0;
+padding-left:18px;
+}
+
+/* Footer */
 footer{
-border-top:1px solid #e5e7eb;
-margin-top:56px;
-padding:20px 0;
-color:var(--muted);
+border-top:1px solid var(--border);
+margin-top:48px;
+padding:18px 0;
+text-align:center;
 font-size:.85rem;
+color:var(--muted);
+}
+
+/* Responsive */
+@media (max-width:800px){
+.funnel{grid-template-columns:1fr}
+header h1{font-size:2rem}
 }
 </style>
 </head>
 
 <body>
 
-<!-- ===== ENTERPRISE BANNER ===== -->
-<div class="top-banner">
-  <img src="./banner-enterprise-agile.jpg"
-       alt="Enterprise Agile & Delivery Leadership – Senior SAFe Scrum Master Abdul Rahim Hakim Mohammed">
-</div>
-
-<!-- ===== HEADER ===== -->
+<!-- HEADER -->
 <header>
-  <div class="container">
+  <div class="container header-inner">
     <h1>Abdul Rahim Hakim Mohammed</h1>
-    <p><strong>Senior SAFe Scrum Master · Agile Delivery Lead</strong></p>
+    <p class="title">Senior SAFe Scrum Master · Agile Delivery Lead</p>
     <p>Dallas, TX · Remote · 214-281-2447 · abdulrahimhm78@gmail.com</p>
-    <p>
-      18+ years enabling predictable delivery for enterprise platform, cloud,
-      and data engineering organizations where execution confidence,
-      risk visibility, and delivery reliability matter.
-    </p>
-    <p>
-      SAFe · Scrum · Kanban · PI Planning · Flow Metrics · Enterprise Platforms
-    </p>
+    <p>SAFe · Scrum · Kanban · PI Planning · Flow Metrics · Enterprise Platforms</p>
   </div>
 </header>
 
 <main class="container">
 
-<!-- ===== RECRUITER FUNNEL ===== -->
-<section class="recruiter-funnel">
-  <div class="funnel-card">
-    <h2>Recruiters & Hiring Managers</h2>
-    <p class="funnel-sub">
-      This page is designed to save you time. If the role matches the criteria below,
-      reach out directly for fast alignment.
-    </p>
+<!-- RECRUITER FUNNEL -->
+<section>
+  <h2>Recruiters & Hiring Managers</h2>
+  <div class="funnel">
+    <div class="card">
+      <h3>For Recruiters</h3>
+      <ul>
+        <li>Senior / Principal Scrum Master</li>
+        <li>Agile Delivery Lead</li>
+        <li>Platform, Cloud, or Data Engineering</li>
+        <li>Contract or Full-Time</li>
+      </ul>
+      <a class="btn btn-secondary"
+         href="https://mail.google.com/mail/?view=cm&fs=1&to=abdulrahimhm78@gmail.com&su=Scrum%20Master%20Role%20Inquiry"
+         target="_blank" rel="noopener">
+        Email Role Details
+      </a>
+    </div>
 
-    <div class="funnel-grid">
-      <div class="funnel-box">
-        <h3>For Recruiters</h3>
-        <ul>
-          <li>Senior / Principal Scrum Master</li>
-          <li>Agile Delivery Lead</li>
-          <li>Platform, Cloud, or Data Engineering teams</li>
-          <li>Contract or Full-Time</li>
-          <li>US-based or Remote</li>
-        </ul>
-        <a class="funnel-btn"
-           href="https://mail.google.com/mail/?view=cm&fs=1&to=abdulrahimhm78@gmail.com&su=Scrum%20Master%20Role%20Inquiry&body=Hi%20Abdul%2C%0A%0AI%E2%80%99d%20like%20to%20discuss%20a%20Senior%20Scrum%20Master%20or%20Agile%20Delivery%20Lead%20opportunity.%0A%0ACompany%3A%0ALocation%3A%0AContract%20or%20FTE%3A%0A%0AThank%20you%2C"
-           target="_blank" rel="noopener">
-           Email Role Details
-        </a>
-      </div>
-
-      <div class="funnel-box">
-        <h3>For Hiring Managers</h3>
-        <ul>
-          <li>Need delivery predictability, not ceremony</li>
-          <li>Multiple teams or shared dependencies</li>
-          <li>Platform, data, or regulated environments</li>
-          <li>PI Planning, flow metrics, executive visibility</li>
-        </ul>
-        <a class="cta"
-           href="https://www.linkedin.com/in/abdul-rahimhm/"
-           target="_blank" rel="noopener">
-           Message on LinkedIn
-        </a>
-      </div>
+    <div class="card">
+      <h3>For Hiring Managers</h3>
+      <ul>
+        <li>Predictable delivery over ceremony</li>
+        <li>Multiple teams & dependencies</li>
+        <li>Regulated or platform environments</li>
+      </ul>
+      <a class="btn btn-primary"
+         href="https://www.linkedin.com/in/abdul-rahimhm/"
+         target="_blank" rel="noopener">
+        Message on LinkedIn
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ===== SUMMARY ===== -->
+<!-- SUMMARY -->
 <section>
-<h2>Professional Summary</h2>
-<p>
-Senior Scrum Master with 18+ years of experience driving Agile delivery in regulated,
-large-scale enterprise environments across financial services, healthcare,
-retail, and government. Proven success improving sprint and PI predictability
-by over 30% through capacity-based planning, flow metrics, and dependency management.
-</p>
-<p>
-Extensive experience facilitating PI Planning, backlog refinement,
-Scrum of Scrums, and cross-team alignment to remove impediments,
-reduce risk, and ensure reliable, on-time releases.
-</p>
+  <h2>Professional Summary</h2>
+  <div class="card">
+    <p>
+      Senior Scrum Master with 18+ years driving Agile delivery in regulated,
+      large-scale enterprise environments across financial services, healthcare,
+      retail, and government. Proven in improving sprint and PI predictability
+      by 30%+ using flow metrics, capacity realism, and dependency management.
+    </p>
+  </div>
 </section>
 
-<!-- ===== EXPERIENCE ===== -->
+<!-- EXPERIENCE -->
 <section>
-<h2>Professional Experience</h2>
+  <h2>Professional Experience</h2>
 
-<h3>Fidelity Investments — Agile Scrum Master / Delivery Lead (Apr 2025 – Present)</h3>
-<ul>
-<li>Serves as Scrum Master for API and platform teams supporting mission-critical Health & Welfare systems</li>
-<li>Improved sprint and PI predictability by 30%+ using capacity-based planning and flow metrics</li>
-<li>Implemented cycle time, throughput, and WIP tracking to reduce spillover</li>
-<li>Facilitates all Scrum ceremonies and PI Planning events</li>
-<li>Coordinates cross-team dependencies and systemic risk mitigation</li>
-<li>Provides executive delivery dashboards for roadmap and funding decisions</li>
-</ul>
+  <div class="job">
+    <h3>Fidelity Investments — Agile Scrum Master / Delivery Lead (2025–Present)</h3>
+    <ul>
+      <li>Scrum Master for API and platform teams supporting Health & Welfare systems</li>
+      <li>Improved sprint and PI predictability by 30%+</li>
+      <li>Implemented cycle time, throughput, and WIP tracking</li>
+    </ul>
+  </div>
 
-<!-- (remaining experience unchanged) -->
-
+  <div class="job">
+    <h3>TISTA Science & Technology — Senior Scrum Master (2023–2025)</h3>
+    <ul>
+      <li>Led 2–3 Scrum teams on USDA FPAC cloud modernization</li>
+      <li>Established Azure DevOps governance and dashboards</li>
+    </ul>
+  </div>
 </section>
 
-<!-- ===== DOWNLOAD ===== -->
+<!-- RESUME -->
 <section>
-<h2>Download Resume</h2>
-<a class="cta"
-   href="./Abdul_Rahim_Scrum_Master.docx"
-   download>
-   Download Resume (DOCX)
-</a>
+  <h2>Resume</h2>
+  <a class="btn btn-primary"
+     href="Abdul_Rahim_Scrum_Master.docx"
+     download>
+     Download Resume (DOCX)
+  </a>
 </section>
 
 </main>
 
-<footer class="container">
+<footer>
 © Abdul Rahim Hakim Mohammed · Senior SAFe Scrum Master & Agile Delivery Lead
 </footer>
 
