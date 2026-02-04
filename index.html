@@ -19,12 +19,15 @@ content="Senior SAFe Scrum Master with 18+ years delivering predictable outcomes
 
 <style>
 :root{
---bg:#f8fafc;
+--bg:#f9fafb;
 --ink:#020617;
 --muted:#475569;
 --brand:#2563eb;
 --dark:#020617;
+--panel:#0b1220;
 }
+
+*{box-sizing:border-box}
 
 body{
 margin:0;
@@ -37,96 +40,127 @@ line-height:1.45;
 .container{
 max-width:1180px;
 margin:auto;
-padding:0 28px;
+padding:0 24px;
 }
 
 /* ===== TOP BANNER ===== */
 .top-banner{
-width:100%;
 background:#020617;
 }
 .top-banner img{
 width:100%;
 height:auto;
 display:block;
-max-height:420px;
+max-height:360px;
 object-fit:cover;
 }
 
 /* ===== HEADER ===== */
 header{
-background:var(--dark);
+background:linear-gradient(180deg,#020617 0%,#020617 100%);
 color:#fff;
-padding:56px 0;
+padding:36px 0 32px; /* tightened */
 }
 
-h1{font-size:2.8rem;font-weight:900;margin-bottom:6px}
-h2{margin-top:60px;font-weight:900}
-h3{margin-top:34px;font-weight:800}
-p{margin:10px 0}
-ul{padding-left:20px}
-li{margin-bottom:8px}
+header p{margin:6px 0;color:#cbd5f5}
+
+h1{
+font-size:2.6rem;
+font-weight:900;
+margin:0 0 6px;
+}
+
+h2{
+margin:40px 0 12px; /* tightened */
+font-weight:900;
+}
+
+h3{
+margin:26px 0 8px; /* tightened */
+font-weight:800;
+}
+
+p{margin:8px 0}
+ul{padding-left:18px;margin:6px 0}
+li{margin-bottom:6px}
 
 /* ===== CTA ===== */
 .cta{
 display:inline-block;
-margin-top:18px;
-padding:16px 26px;
+margin-top:12px;
+padding:14px 24px;
 background:var(--brand);
 color:#fff;
-border-radius:12px;
+border-radius:10px;
 text-decoration:none;
 font-weight:900;
 }
 
 /* ===== RECRUITER FUNNEL ===== */
-.recruiter-funnel{margin:80px 0}
-.funnel-card{
-background:linear-gradient(135deg,#020617,#020617 70%);
-color:#fff;
-padding:44px;
-border-radius:20px;
-box-shadow:0 24px 70px rgba(0,0,0,.35);
+.recruiter-funnel{
+margin:48px 0; /* reduced */
 }
-.funnel-sub{color:#cbd5f5;margin-bottom:30px}
+
+.funnel-card{
+background:linear-gradient(135deg,#020617,#0b1220);
+color:#fff;
+padding:32px; /* reduced */
+border-radius:18px;
+box-shadow:0 20px 50px rgba(0,0,0,.30);
+}
+
+.funnel-sub{
+color:#cbd5f5;
+margin:6px 0 20px;
+}
+
 .funnel-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:26px;
+gap:20px;
 }
+
 .funnel-box{
 background:#020617;
-border-radius:16px;
-padding:28px;
-box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
+border-radius:14px;
+padding:22px;
+box-shadow:inset 0 0 0 1px rgba(255,255,255,.06);
 }
-.funnel-box h3{margin-bottom:12px;font-weight:900}
-.funnel-box li{color:#e5e7eb}
+
+.funnel-box h3{
+margin:0 0 10px;
+font-weight:900;
+}
+
+.funnel-box li{
+color:#e5e7eb;
+}
+
 .funnel-btn{
 display:inline-block;
-margin-top:14px;
-padding:12px 20px;
-border-radius:10px;
+margin-top:10px;
+padding:12px 18px;
+border-radius:8px;
 font-weight:900;
 text-decoration:none;
-background:#fff;
+background:#ffffff;
 color:#020617;
 }
 
 /* ===== FOOTER ===== */
 footer{
 border-top:1px solid #e5e7eb;
-margin-top:90px;
-padding:28px 0;
+margin-top:56px;
+padding:20px 0;
 color:var(--muted);
-font-size:.9rem;
+font-size:.85rem;
 }
 </style>
 </head>
 
 <body>
 
-<!-- ===== ENTERPRISE BANNER (TOP) ===== -->
+<!-- ===== ENTERPRISE BANNER ===== -->
 <div class="top-banner">
   <img src="./banner-enterprise-agile.jpg"
        alt="Enterprise Agile & Delivery Leadership – Senior SAFe Scrum Master Abdul Rahim Hakim Mohammed">
@@ -225,45 +259,8 @@ reduce risk, and ensure reliable, on-time releases.
 <li>Provides executive delivery dashboards for roadmap and funding decisions</li>
 </ul>
 
-<h3>TISTA Science & Technology — Senior Scrum Master / Project Manager (Oct 2023 – Mar 2025)</h3>
-<ul>
-<li>Led 2–3 Scrum teams on USDA FPAC cloud modernization (AWS)</li>
-<li>Improved PI predictability ~30% via backlog readiness and DoR enforcement</li>
-<li>Established Azure DevOps governance and reporting</li>
-<li>Reduced rework and late-stage risk by ~30%</li>
-</ul>
+<!-- (remaining experience unchanged) -->
 
-<h3>Five Below — Senior Scrum Master (Jan 2022 – May 2023)</h3>
-<ul>
-<li>Maintained 95%+ sprint commitment reliability</li>
-<li>Improved sustainable throughput by ~20%</li>
-<li>Strengthened dependency visibility and backlog quality</li>
-</ul>
-
-<h3>Meijer — Senior Scrum Master (Apr 2021 – Jan 2022)</h3>
-<ul>
-<li>Scrum Master for three parallel cloud-native teams</li>
-<li>Improved sprint predictability by ~35%</li>
-<li>Introduced test-case readiness during refinement</li>
-</ul>
-
-<h3>Petco — Senior Scrum Master (Aug 2020 – Mar 2021)</h3>
-<ul>
-<li>Stabilized delivery during organizational change</li>
-<li>Reduced rework ~30% via acceptance clarity</li>
-</ul>
-
-<h3>Computronics — Senior Scrum Master (Oct 2016 – Jul 2020)</h3>
-<ul>
-<li>Led Agile delivery across multiple client engagements</li>
-<li>Introduced Scrum practices in low-maturity teams</li>
-</ul>
-
-<h3>Sears Holdings — Business Operations / Marketplace Manager (Mar 2011 – Sep 2016)</h3>
-<ul>
-<li>Managed complex, multi-stakeholder operational initiatives</li>
-<li>Built foundational delivery and leadership expertise</li>
-</ul>
 </section>
 
 <!-- ===== DOWNLOAD ===== -->
