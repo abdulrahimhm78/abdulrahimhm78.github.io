@@ -40,10 +40,24 @@ margin:auto;
 padding:0 28px;
 }
 
+/* ===== TOP BANNER ===== */
+.top-banner{
+width:100%;
+background:#020617;
+}
+.top-banner img{
+width:100%;
+height:auto;
+display:block;
+max-height:420px;
+object-fit:cover;
+}
+
+/* ===== HEADER ===== */
 header{
 background:var(--dark);
 color:#fff;
-padding:64px 0;
+padding:56px 0;
 }
 
 h1{font-size:2.8rem;font-weight:900;margin-bottom:6px}
@@ -53,6 +67,7 @@ p{margin:10px 0}
 ul{padding-left:20px}
 li{margin-bottom:8px}
 
+/* ===== CTA ===== */
 .cta{
 display:inline-block;
 margin-top:18px;
@@ -64,19 +79,8 @@ text-decoration:none;
 font-weight:900;
 }
 
-footer{
-border-top:1px solid #e5e7eb;
-margin-top:90px;
-padding:28px 0;
-color:var(--muted);
-font-size:.9rem;
-}
-
-/* Recruiter Funnel */
-.recruiter-funnel{
-margin:80px 0;
-}
-
+/* ===== RECRUITER FUNNEL ===== */
+.recruiter-funnel{margin:80px 0}
 .funnel-card{
 background:linear-gradient(135deg,#020617,#020617 70%);
 color:#fff;
@@ -84,35 +88,20 @@ padding:44px;
 border-radius:20px;
 box-shadow:0 24px 70px rgba(0,0,0,.35);
 }
-
-.funnel-sub{
-color:#cbd5f5;
-max-width:80ch;
-margin-bottom:30px;
-}
-
+.funnel-sub{color:#cbd5f5;margin-bottom:30px}
 .funnel-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:26px;
 }
-
 .funnel-box{
 background:#020617;
 border-radius:16px;
 padding:28px;
 box-shadow:inset 0 0 0 1px rgba(255,255,255,.08);
 }
-
-.funnel-box h3{
-margin-bottom:12px;
-font-weight:900;
-}
-
-.funnel-box li{
-color:#e5e7eb;
-}
-
+.funnel-box h3{margin-bottom:12px;font-weight:900}
+.funnel-box li{color:#e5e7eb}
 .funnel-btn{
 display:inline-block;
 margin-top:14px;
@@ -120,15 +109,30 @@ padding:12px 20px;
 border-radius:10px;
 font-weight:900;
 text-decoration:none;
+background:#fff;
+color:#020617;
 }
 
-.primary{background:#2563eb;color:#fff}
-.secondary{background:#fff;color:#020617}
+/* ===== FOOTER ===== */
+footer{
+border-top:1px solid #e5e7eb;
+margin-top:90px;
+padding:28px 0;
+color:var(--muted);
+font-size:.9rem;
+}
 </style>
 </head>
 
 <body>
 
+<!-- ===== ENTERPRISE BANNER (TOP) ===== -->
+<div class="top-banner">
+  <img src="./banner-enterprise-agile.jpg"
+       alt="Enterprise Agile & Delivery Leadership – Senior SAFe Scrum Master Abdul Rahim Hakim Mohammed">
+</div>
+
+<!-- ===== HEADER ===== -->
 <header>
   <div class="container">
     <h1>Abdul Rahim Hakim Mohammed</h1>
@@ -147,7 +151,7 @@ text-decoration:none;
 
 <main class="container">
 
-<!-- RECRUITER FUNNEL -->
+<!-- ===== RECRUITER FUNNEL ===== -->
 <section class="recruiter-funnel">
   <div class="funnel-card">
     <h2>Recruiters & Hiring Managers</h2>
@@ -166,13 +170,11 @@ text-decoration:none;
           <li>Contract or Full-Time</li>
           <li>US-based or Remote</li>
         </ul>
-<a class="funnel-btn secondary"
-   href="https://mail.google.com/mail/?view=cm&fs=1&to=abdulrahimhm78@gmail.com&su=Scrum%20Master%20Role%20Inquiry&body=Hi%20Abdul%2C%0A%0AI%E2%80%99d%20like%20to%20discuss%20a%20Senior%20Scrum%20Master%20or%20Agile%20Delivery%20Lead%20opportunity.%0A%0ACompany%3A%0ALocation%3A%0AContract%20or%20FTE%3A%0AStart%20Date%3A%0A%0AThank%20you%2C"
-   target="_blank"
-   rel="noopener">
-   Email Role Details
-</a>
-
+        <a class="funnel-btn"
+           href="https://mail.google.com/mail/?view=cm&fs=1&to=abdulrahimhm78@gmail.com&su=Scrum%20Master%20Role%20Inquiry&body=Hi%20Abdul%2C%0A%0AI%E2%80%99d%20like%20to%20discuss%20a%20Senior%20Scrum%20Master%20or%20Agile%20Delivery%20Lead%20opportunity.%0A%0ACompany%3A%0ALocation%3A%0AContract%20or%20FTE%3A%0A%0AThank%20you%2C"
+           target="_blank" rel="noopener">
+           Email Role Details
+        </a>
       </div>
 
       <div class="funnel-box">
@@ -183,9 +185,9 @@ text-decoration:none;
           <li>Platform, data, or regulated environments</li>
           <li>PI Planning, flow metrics, executive visibility</li>
         </ul>
-        <a class="funnel-btn primary"
+        <a class="cta"
            href="https://www.linkedin.com/in/abdul-rahimhm/"
-           target="_blank">
+           target="_blank" rel="noopener">
            Message on LinkedIn
         </a>
       </div>
@@ -193,7 +195,7 @@ text-decoration:none;
   </div>
 </section>
 
-<!-- SUMMARY -->
+<!-- ===== SUMMARY ===== -->
 <section>
 <h2>Professional Summary</h2>
 <p>
@@ -209,7 +211,7 @@ reduce risk, and ensure reliable, on-time releases.
 </p>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- ===== EXPERIENCE ===== -->
 <section>
 <h2>Professional Experience</h2>
 
@@ -264,7 +266,7 @@ reduce risk, and ensure reliable, on-time releases.
 </ul>
 </section>
 
-<!-- DOWNLOAD -->
+<!-- ===== DOWNLOAD ===== -->
 <section>
 <h2>Download Resume</h2>
 <a class="cta"
