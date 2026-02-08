@@ -58,18 +58,17 @@ padding:0 26px;
 /* ===== HERO HEADER — FIX ===== */
 header{
   position:relative;
-  border-bottom:1px solid rgba(2,6,23,.08);
+  border-bottom:none;
 
   background-image:url('Banner.png');
   background-repeat:no-repeat;
   background-position:center top;
-  background-size:contain;
+  background-size:cover;   /* fill full width */
   background-color:#eef2f7;
 
-  min-height:340px;
-  display:flex;
-  align-items:center;
+  min-height:360px;
 }
+
 header::before{
   content:"";
   position:absolute;
@@ -86,15 +85,14 @@ header::before{
   .hero{
 padding:90px 0 60px;
 }
-  
 .hero{
   position:relative;
   z-index:1;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:32px;
-  padding:40px 0 30px;
+  gap:36px;
+  padding:50px 0 40px;
 }
 .hero-text{max-width:68%}
 
