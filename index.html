@@ -55,6 +55,7 @@ padding:0 26px;
 }
 
 /* ===== HERO HEADER ===== */
+/* ===== HERO HEADER ===== */
 header{
   position:relative;
   border-bottom:none;
@@ -64,21 +65,34 @@ header{
   background-image:url('Banner.png');
   background-repeat:no-repeat;
   background-position:center center;
-  background-size:contain;     /* show entire logo grid */
-  min-height:340px;
+  background-size:cover;   /* fills width without side gaps */
+
+  min-height:360px;
+  overflow:hidden;
 }
+
+/* WATERMARK SOFT BLEND */
 header::before{
   content:"";
   position:absolute;
   inset:0;
 
-  /* white fade overlay */
-  background:rgba(255,255,255,0.78);
+  backdrop-filter: blur(2px);   /* soft watermark blur */
+  background:linear-gradient(
+    rgba(255,255,255,0.55),
+    rgba(255,255,255,0.70)
+  );
 
   z-index:0;
 }
 
+/* MAKE HEADER FULL WIDTH */
+header .container{
+  max-width:100%;
+  padding:0 50px;
 }
+
+/* HERO LAYOUT */
 .hero{
   position:relative;
   z-index:1;
@@ -86,60 +100,87 @@ header::before{
   align-items:center;
   justify-content:space-between;
   gap:36px;
-  padding:40px 0 30px;
+
+  padding:55px 0 40px;   /* tight professional spacing */
 }
 
-.hero-text{max-width:68%}
+.hero-text{
+  max-width:68%;
+}
 
+/* NAME */
 .hero h1{
-margin:0 0 12px;
-font-size:2.9rem;
-font-weight:900;
-letter-spacing:.3px;
-color:#000;
+  margin:0 0 10px;
+  font-size:2.9rem;
+  font-weight:900;
+  color:#000;
+  text-shadow:0 2px 4px rgba(0,0,0,0.15);
 }
 
+/* TITLE */
 .hero .title{
-margin:0 0 12px;
-font-size:1.28rem;
-font-weight:900;
-color:#0b1220;
+  margin:0 0 8px;
+  font-size:1.25rem;
+  font-weight:900;
+  color:#0b1220;
 }
 
+/* META LINE */
 .hero .meta-line{
-margin:var(--space-xs) 0;
-font-weight:700;
-color:#2a3445;
+  margin:4px 0;
+  font-weight:700;
+  color:#2a3445;
 }
 
+/* LINKS */
 .hero .links{
-margin-top:var(--space-sm);
-font-weight:800;
+  margin-top:8px;
+  font-weight:800;
 }
 
 .hero a{
-color:var(--brand);
-text-decoration:none;
-font-weight:900;
+  color:#0a66c2;
+  text-decoration:none;
+  font-weight:900;
 }
 
 .hero a:hover{
-text-decoration:underline;
+  text-decoration:underline;
 }
 
+/* PROFILE PHOTO */
 .profile-pic{
-width:180px;
-height:180px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #ffffff;
-box-shadow:0 20px 45px rgba(0,0,0,.25);
-background:#fff;
-position:relative;
-z-index:5;
-  margin-top:-10px;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  object-fit:cover;
+  border:6px solid #ffffff;
+  box-shadow:0 20px 45px rgba(0,0,0,.25);
+  background:#fff;
+  position:relative;
+  z-index:2;
 }
 
+/* RESPONSIVE */
+@media (max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-text{
+    max-width:100%;
+  }
+
+  .profile-pic{
+    width:150px;
+    height:150px;
+  }
+
+  .hero h1{
+    font-size:2.2rem;
+  }
+}
 /* ===== MAIN ===== */
 main{padding:var(--space-xl) 0 0}
 
@@ -316,41 +357,32 @@ font-size:2.2rem;
 
 <header>
   <div class="container hero">
+
     <div class="hero-text">
       <h1>Abdul Rahim Hakim Mohammed</h1>
-      <p class="title">Senior Scrum Master · Agile Delivery Lead · Technical Program Manager</p>
 
-      <p class="meta-line">Dallas, TX · Remote · 214-281-2447 · abdulrahimhm78@gmail.com</p>
-
-      <p class="links">
-        <a href="https://abdulrahimhm78.github.io/" target="_blank" rel="noopener">Portfolio</a>
-        ·
-        <a href="https://www.linkedin.com/in/abdul-rahimhm/" target="_blank" rel="noopener">LinkedIn</a>
-        ·
-        <a href="https://github.com/abdulrahimhm78" target="_blank" rel="noopener">GitHub</a>
+      <p class="title">
+        Senior Scrum Master · Agile Delivery Lead · Technical Program Manager
       </p>
 
-      <div class="pills" aria-label="Core keywords">
-        <span class="pill">Agile Delivery Leadership</span>
-        <span class="pill">SAFe</span>
-        <span class="pill">Scrum Master</span>
-        <span class="pill">Technical Program Management</span>
-        <span class="pill">PI Planning</span>
-        <span class="pill">Flow Metrics</span>
-        <span class="pill">Backlog Readiness</span>
-        <span class="pill">Dependency Management</span>
-        <span class="pill">Jira</span>
-        <span class="pill">Jira Align</span>
-        <span class="pill">Azure DevOps</span>
-        <span class="pill">AWS</span>
-        <span class="pill">Platform · Cloud · Data</span>
-        <span class="pill">Regulated Delivery</span>
-      </div>
+      <p class="meta-line">
+        Dallas, TX · Remote · 214-281-2447 · abdulrahimhm78@gmail.com
+      </p>
+
+      <p class="links">
+        <a href="https://abdulrahimhm78.github.io/" target="_blank">Portfolio</a> ·
+        <a href="https://www.linkedin.com/in/abdul-rahimhm/" target="_blank">LinkedIn</a> ·
+        <a href="https://github.com/abdulrahimhm78" target="_blank">GitHub</a>
+      </p>
+
+      <!-- PILLS REMAIN AS YOU ALREADY HAVE -->
     </div>
 
-    <img src="profile.jpg" alt="Abdul Rahim profile photo" class="profile-pic">
+    <img src="profile.jpg" alt="Abdul Rahim Profile Photo" class="profile-pic">
+
   </div>
 </header>
+
 
 <main class="container">
 
