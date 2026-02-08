@@ -7,7 +7,7 @@
 <title>Abdul Rahim Hakim Mohammed | Senior Scrum Master · Agile Delivery Lead · Technical Program Manager</title>
 
 <meta name="description"
-content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise platform, cloud, and data delivery through predictable execution, flow metrics, backlog discipline, and delivery governance.">
+content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise platform, cloud, and data delivery through constraint-aware planning, flow metrics, backlog readiness, and dependency ownership across regulated environments.">
 
 <link rel="canonical" href="https://abdulrahimhm78.github.io/">
 <meta name="robots" content="index,follow">
@@ -24,11 +24,12 @@ content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise plat
 --ink:#0f172a;
 --muted:#475569;
 --brand:#0a66c2;
+--header:#0a66c2;
 --border:#e2e8f0;
+--shadow:0 10px 30px rgba(2,6,23,.08);
 }
 
 *{box-sizing:border-box}
-
 body{
 margin:0;
 font-family:Inter,Arial,sans-serif;
@@ -36,80 +37,77 @@ background:var(--bg);
 color:var(--ink);
 line-height:1.65;
 }
+.container{max-width:1140px;margin:auto;padding:0 24px;}
 
-.container{
-max-width:1140px;
-margin:auto;
-padding:0 24px;
-}
-
-/* ===== HEADER BANNER ===== */
-
+/* ===== HERO HEADER (BANNER + BLACK TEXT + PHOTO) ===== */
 header{
 position:relative;
-color:#ffffff;
-border-bottom:1px solid rgba(255,255,255,.15);
+border-bottom:1px solid rgba(2,6,23,.08);
 background:url('Banner.png') center/cover no-repeat;
 }
-
-/* Glass Blue Overlay */
 header::before{
 content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
+position:absolute;inset:0;
 background:linear-gradient(
 180deg,
-rgba(37,99,235,0.55) 0%,
-rgba(37,99,235,0.45) 40%,
-rgba(15,23,42,0.75) 100%
+rgba(255,255,255,.72) 0%,
+rgba(255,255,255,.90) 55%,
+rgba(241,245,249,.96) 100%
 );
 z-index:0;
 }
-
-.header-inner{
-position:relative;
-z-index:1;
-padding:64px 0 56px;
+.hero{
+position:relative;z-index:1;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:26px;
+padding:72px 0 58px;
 }
-
-header h1{
-margin:0 0 6px;
-font-size:2.4rem;
+.hero-text{max-width:74%}
+.hero h1{
+margin:0 0 8px;
+font-size:2.7rem;
 font-weight:900;
-text-shadow:0 3px 14px rgba(0,0,0,0.5);
+color:#020617; /* black */
+letter-spacing:.2px;
 }
-
-header p{
+.hero .title{
+margin:0 0 8px;
+font-size:1.18rem;
+font-weight:900;
+color:#0f172a; /* black */
+}
+.hero .meta-line{
 margin:4px 0;
-color:#e5e7eb;
-}
-
-header .title{
-color:#ffffff;
 font-weight:700;
+color:#1e293b;
 }
-
-.tools{
+.hero .links{
 margin-top:10px;
-font-size:0.92rem;
-letter-spacing:0.4px;
-opacity:0.9;
+font-weight:800;
+color:#0f172a;
+}
+.hero a{color:var(--brand);text-decoration:none;font-weight:900;}
+.hero a:hover{text-decoration:underline;}
+
+.profile-pic{
+width:170px;height:170px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid rgba(255,255,255,.95);
+box-shadow:0 14px 34px rgba(2,6,23,.18);
+background:#fff;
 }
 
 /* ===== MAIN ===== */
-
-main{padding:40px 0 0}
-
-section{margin-bottom:52px}
-
+main{padding:42px 0 0}
+section{margin-bottom:54px}
 section h2{
 margin:0 0 16px;
 font-size:1.45rem;
 font-weight:900;
-border-left:4px solid #0a66c2;
+border-left:4px solid var(--brand);
 padding-left:12px;
 }
 
@@ -118,43 +116,54 @@ background:var(--panel);
 border:1px solid var(--border);
 border-radius:14px;
 padding:28px;
+box-shadow:var(--shadow);
 }
+.card p{margin:0 0 12px}
+.card p:last-child{margin-bottom:0}
 
-/* Buttons */
+.funnel{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.funnel h3{margin:0 0 12px;font-size:1.05rem;font-weight:900;}
+
+ul{margin:10px 0 0;padding-left:18px}
+li{margin:0 0 8px}
 
 .btn{
 display:inline-block;
 margin-top:16px;
 padding:13px 22px;
 border-radius:10px;
-font-weight:800;
+font-weight:900;
 text-decoration:none;
 }
+.btn-primary{background:#0a66c2;color:#fff;box-shadow:0 8px 20px rgba(10,102,194,.25);}
+.btn-secondary{background:#fff;border:1px solid var(--border);color:var(--ink);}
 
-.btn-primary{
-background:#0a66c2;
-color:#fff;
-box-shadow:0 4px 14px rgba(10,102,194,.35);
-}
+.job{margin-bottom:44px}
+.job:last-child{margin-bottom:0}
+.job h3{margin:0 0 6px;font-size:1.18rem;font-weight:900;}
+.job .meta{color:var(--muted);font-size:.95rem;font-weight:800;margin-bottom:10px;}
+.context{margin:0 0 12px;color:#0f172a;font-weight:600;}
+.divider{height:1px;background:var(--border);margin:18px 0;}
 
-.job{margin-bottom:40px}
-
-.job h3{
-margin:0 0 6px;
-font-size:1.15rem;
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+.pill{
+display:inline-block;
+padding:6px 10px;
+border-radius:999px;
+border:1px solid var(--border);
+background:#fff;
 font-weight:800;
+font-size:.85rem;
+color:#0f172a;
 }
 
-.job .meta{
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+
+.small-note{
+font-size:.92rem;
 color:var(--muted);
-font-size:.95rem;
-margin-bottom:10px;
-}
-
-.columns{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:22px;
+font-weight:650;
+margin-top:10px;
 }
 
 footer{
@@ -164,12 +173,16 @@ padding:22px 0;
 text-align:center;
 font-size:.85rem;
 color:var(--muted);
-background:var(--panel);
+background:#fff;
 }
 
 @media (max-width:900px){
+.hero{flex-direction:column;text-align:center}
+.hero-text{max-width:100%}
+.profile-pic{width:140px;height:140px}
+.funnel{grid-template-columns:1fr}
 .columns{grid-template-columns:1fr}
-header h1{font-size:2rem}
+.hero h1{font-size:2.1rem}
 }
 </style>
 </head>
@@ -177,158 +190,564 @@ header h1{font-size:2rem}
 <body>
 
 <header>
-<div class="container header-inner">
-<h1>Abdul Rahim Hakim Mohammed</h1>
-<p class="title">Senior Scrum Master · Agile Delivery Lead · Technical Program Manager</p>
-<p>Dallas, TX · Remote · 214-281-2447 · abdulrahimhm78@gmail.com</p>
-<p>Portfolio · abdulrahimhm78.github.io · GitHub · github.com/abdulrahimhm78 · LinkedIn · linkedin.com/in/abdul-rahimhm</p>
-<p class="tools">
-Scrum · SAFe · Jira · Azure DevOps · AWS · ServiceNow · Miro · Google Cloud
-</p>
-</div>
+  <div class="container hero">
+    <div class="hero-text">
+      <h1>Abdul Rahim Hakim Mohammed</h1>
+      <p class="title">Senior Scrum Master · Agile Delivery Lead · Technical Program Manager</p>
+
+      <p class="meta-line">Dallas, TX · Remote · 214-281-2447 · abdulrahimhm78@gmail.com</p>
+
+      <p class="links">
+        <a href="https://abdulrahimhm78.github.io/" target="_blank" rel="noopener">Portfolio</a>
+        ·
+        <a href="https://www.linkedin.com/in/abdul-rahimhm/" target="_blank" rel="noopener">LinkedIn</a>
+        ·
+        <a href="https://github.com/abdulrahimhm78" target="_blank" rel="noopener">GitHub</a>
+      </p>
+
+      <div class="pills" aria-label="Core keywords">
+        <span class="pill">Agile Delivery Leadership</span>
+        <span class="pill">SAFe</span>
+        <span class="pill">Scrum Master</span>
+        <span class="pill">Technical Program Management</span>
+        <span class="pill">PI Planning</span>
+        <span class="pill">Flow Metrics</span>
+        <span class="pill">Backlog Readiness</span>
+        <span class="pill">Dependency Management</span>
+        <span class="pill">Jira</span>
+        <span class="pill">Jira Align</span>
+        <span class="pill">Azure DevOps</span>
+        <span class="pill">AWS</span>
+        <span class="pill">Platform · Cloud · Data</span>
+        <span class="pill">Regulated Delivery</span>
+      </div>
+    </div>
+
+    <img src="profile.jpg" alt="Abdul Rahim profile photo" class="profile-pic">
+  </div>
 </header>
 
 <main class="container">
 
-<section>
-<h2>Executive Summary</h2>
-<div class="card">
-<p>
-Senior Scrum Master and Agile Delivery Lead specializing in stabilizing enterprise platform,
-cloud, and data delivery environments where backlog readiness, capacity realism,
-and cross-team dependencies directly impact predictability.
-</p>
-<p>
-Known for improving sprint and PI predictability by 30%+, reducing rework,
-and enabling executive confidence through flow metrics,
-backlog discipline, and realistic commitment planning.
-</p>
-</div>
-</section>
+  <!-- RECRUITER FUNNEL -->
+  <section>
+    <h2>Recruiters & Hiring Managers</h2>
+    <div class="funnel">
+      <div class="card">
+        <h3>For Recruiters</h3>
+        <ul>
+          <li>Senior / Principal Scrum Master</li>
+          <li>Agile Delivery Lead</li>
+          <li>Technical Program Manager (TPM) — delivery + governance</li>
+          <li>Platform, Cloud, Data Engineering, API modernization</li>
+          <li>Contract or Full-Time · Remote or US-Based</li>
+        </ul>
+        <a class="btn btn-secondary"
+           href="mailto:abdulrahimhm78@gmail.com?subject=Role%20Inquiry%20-%20Senior%20Scrum%20Master%20/%20Delivery%20Lead">
+          Email Role Details
+        </a>
+        <div class="small-note">Include job description + location + target start date to speed up alignment.</div>
+      </div>
 
-<section>
-<h2>Professional Experience</h2>
+      <div class="card">
+        <h3>For Hiring Managers</h3>
+        <ul>
+          <li>Predictable delivery over ceremony</li>
+          <li>Constraint-aware planning: capacity, readiness, dependencies</li>
+          <li>Multi-team execution with shared services and integrations</li>
+          <li>Flow metrics, executive transparency, delivery governance</li>
+          <li>Calm delivery leadership under pressure</li>
+        </ul>
+        <a class="btn btn-primary"
+           href="https://www.linkedin.com/in/abdul-rahimhm/"
+           target="_blank" rel="noopener">
+          Message on LinkedIn
+        </a>
+        <div class="small-note">Happy to walk through operating standards, dashboards, and delivery outcomes.</div>
+      </div>
+    </div>
+  </section>
 
-<div class="job">
-<h3>Fidelity Investments — Senior Scrum Master / Agile Delivery Lead</h3>
-<div class="meta">Apr 2025 – Present · Westlake, TX</div>
-<ul>
-<li>Improved sprint and PI predictability by 30%+ through backlog readiness and realistic capacity alignment.</li>
-<li>Reduced sprint spillover by ~25% using flow metrics.</li>
-<li>Enabled executive dashboards using Jira & Jira Align.</li>
-<li>Supported 6–10 squads and multi-year modernization roadmap.</li>
-</ul>
-</div>
+  <!-- EXECUTIVE SUMMARY -->
+  <section>
+    <h2>Professional Summary</h2>
+    <div class="card">
+      <p>
+        Senior Scrum Master with enterprise-scale delivery leadership experience guiding multi-team and multi-program initiatives across regulated,
+        platform, cloud, and data environments. Delivered a platform modernization at Fidelity that raised sprint predictability by over 30% and cut
+        spillover by 25% through disciplined backlog readiness and capacity planning. At TISTA, led cross-functional Scrum teams in a multi-year USDA
+        cloud migration, improving PI predictability by 30% and providing real-time delivery dashboards for leadership.
+      </p>
+      <p>
+        Recognized for technical delivery leadership, Agile governance, and risk-management discipline—leveraging automation and AI-assisted delivery
+        insights to improve planning efficiency and reporting accuracy.
+      </p>
 
-<div class="job">
-<h3>TISTA Science & Technology Corp — Senior Scrum Master</h3>
-<div class="meta">Oct 2023 – Mar 2025 · Rockville, MD</div>
-<ul>
-<li>Led USDA AWS cloud modernization initiatives.</li>
-<li>Improved PI predictability by ~30%.</li>
-<li>Implemented Azure DevOps dashboards.</li>
-<li>Reduced late-stage defects by ~30%.</li>
-</ul>
-</div>
+      <div class="divider"></div>
 
-<div class="job">
-<h3>Five Below Inc. — Senior Scrum Master</h3>
-<div class="meta">Jan 2022 – May 2023 · Philadelphia, PA</div>
-<ul>
-<li>Strengthened enterprise data governance and analytics modernization.</li>
-<li>Improved PI predictability by ~30%.</li>
-<li>Delivered executive dashboards improving transparency.</li>
-</ul>
-</div>
+      <p><strong>Proven outcomes:</strong></p>
+      <ul>
+        <li>Improved sprint and PI predictability by 30%+ by treating capacity and dependencies as hard delivery constraints</li>
+        <li>Reduced spillover and rework by enforcing Definition of Ready (DoR) and Definition of Done (DoD) as non-negotiable controls</li>
+        <li>Enabled consistent, on-time releases across 5–12 teams by resolving dependency and capacity risk prior to commitment</li>
+        <li>Shifted reporting from velocity-based output to outcome-driven execution aligned to business commitments</li>
+      </ul>
 
-<div class="job">
-<h3>Meijer Inc. — Senior Scrum Master</h3>
-<div class="meta">Apr 2021 – Jan 2022 · Grand Rapids, MI</div>
-<ul>
-<li>Improved sprint predictability by ~35% across three Agile teams.</li>
-<li>Introduced test-case readiness during backlog refinement.</li>
-<li>Facilitated SAFe PI Planning and Scrum of Scrums.</li>
-</ul>
-</div>
+      <p class="small-note"><strong>Domains:</strong> Financial Services · Healthcare · Federal · Retail · Data & Analytics · Platform Modernization</p>
+    </div>
+  </section>
 
-<div class="job">
-<h3>Petco Health & Wellness — Senior Scrum Master</h3>
-<div class="meta">Aug 2020 – Mar 2021 · San Diego, CA</div>
-<ul>
-<li>Stabilized Agile delivery during organizational change.</li>
-<li>Reduced rework by ~30%.</li>
-<li>Strengthened cross-functional collaboration.</li>
-</ul>
-</div>
+  <!-- WHO I HELP / HOW I WORK (LINKEDIN SUMMARY) -->
+  <section>
+    <h2>Who I Help & How I Work</h2>
+    <div class="card">
+      <p>
+        Specializes in stabilizing enterprise platform, cloud, and data delivery when teams struggle to meet PI commitments because capacity and
+        dependencies surface too late. Operates across team, program, and portfolio levels—helping organizations move from reactive delivery to
+        intentional, constraint-aware execution.
+      </p>
+      <p>
+        Focus is correcting the execution decisions that most often break predictability at scale—backlog readiness, capacity realism, and dependency
+        ownership—so commitments are grounded in visible constraints before work is finalized.
+      </p>
+      <p>
+        Collaborative, hands-on delivery partner who balances coaching with accountability. Enables teams to execute with clarity and a sustainable pace
+        while leaders retain confidence through transparent reporting and disciplined governance.
+      </p>
+    </div>
+  </section>
 
-<div class="job">
-<h3>Computronics Inc. — Senior Scrum Master</h3>
-<div class="meta">Oct 2016 – Jul 2020 · Frisco, TX</div>
-<ul>
-<li>Led Agile transformation across enterprise CRM and e-commerce platforms.</li>
-<li>Coached low-maturity teams to enterprise delivery standards.</li>
-<li>Improved stakeholder confidence and delivery transparency.</li>
-</ul>
-</div>
+  <!-- CORE SKILLS (FULL) -->
+  <section>
+    <h2>Core Skills</h2>
+    <div class="card columns">
+      <div>
+        <h3 style="margin:0 0 10px;font-weight:900;">Agile & Delivery</h3>
+        <ul>
+          <li>SAFe, Scrum, Kanban, Scrumban, Scrum of Scrums</li>
+          <li>PI Planning, Inspect & Adapt, ART Execution</li>
+          <li>Flow Metrics: Cycle Time, Throughput, WIP, Predictability</li>
+          <li>Capacity Planning, Dependency Management</li>
+          <li>Risk & Impediment Management</li>
+          <li>Backlog Readiness</li>
+          <li>Definition of Ready (DoR)</li>
+          <li>Definition of Done (DoD)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin:0 0 10px;font-weight:900;">Technical & Governance</h3>
+        <ul>
+          <li>Technical Program Management</li>
+          <li>Delivery Governance</li>
+          <li>Stakeholder & Executive Communication</li>
+          <li>Value Stream Optimization</li>
+          <li>Outcome-Based Delivery</li>
+          <li>Enterprise Platform Delivery</li>
+          <li>Cloud & Data Engineering</li>
+          <li>API & Platform Integration</li>
+          <li>Digital / Platform Modernization</li>
+          <li>Automation Enablement</li>
+          <li>AI-Assisted Delivery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<div class="job">
-<h3>Sears Holdings Corporation — Business Operations / Marketplace Manager</h3>
-<div class="meta">Mar 2011 – Sep 2016 · Hoffman Estates, IL</div>
-<ul>
-<li>Managed cross-functional enterprise e-commerce initiatives.</li>
-<li>Improved operational efficiency and governance through analytics.</li>
-<li>Built foundational delivery leadership skills.</li>
-</ul>
-</div>
+  <!-- DELIVERY PORTFOLIO (YOUR REPOS) -->
+  <section>
+    <h2>Delivery Portfolio</h2>
+    <div class="card">
+      <p>
+        Repositories below reflect working operating standards and delivery artifacts used in enterprise environments. These are intended as practical
+        references to support execution, governance, and executive visibility.
+      </p>
 
-</section>
+      <div class="job">
+        <h3>📘 Enterprise Scrum Playbook</h3>
+        <div class="meta">Practical Scrum execution standards</div>
+        <ul>
+          <li>Sprint Planning, Daily Scrum, Review, Retrospective</li>
+          <li>Scrum Master and Product accountability</li>
+          <li>Definition of Ready (DoR) and Definition of Done (DoD)</li>
+        </ul>
+        <p class="small-note">➡️ <a href="https://github.com/abdulrahimhm78/enterprise-scrum-playbook" target="_blank" rel="noopener">github.com/abdulrahimhm78/enterprise-scrum-playbook</a></p>
+      </div>
 
-<section>
-<h2>Skills, Tools & Frameworks</h2>
-<div class="card columns">
-<ul>
-<li>Scrum · SAFe · Kanban · Scrumban</li>
-<li>PI Planning · Inspect & Adapt</li>
-<li>Flow Metrics · Cycle Time · Throughput</li>
-<li>Capacity Planning · Forecasting</li>
-</ul>
-<ul>
-<li>Jira · Azure DevOps · Confluence</li>
-<li>AWS · Google Cloud</li>
-<li>Platform, Cloud & Data Delivery</li>
-<li>English — Full Professional</li>
-</ul>
-</div>
-</section>
+      <div class="job">
+        <h3>📊 Agile Metrics & Flow</h3>
+        <div class="meta">Flow-based metrics focused on predictability</div>
+        <ul>
+          <li>Cycle time and throughput</li>
+          <li>Delivery health and quality indicators</li>
+          <li>Capacity awareness and constraint management</li>
+          <li>Enterprise anti-patterns and vanity metrics</li>
+        </ul>
+        <p class="small-note">➡️ <a href="https://github.com/abdulrahimhm78/agile-metrics-and-flow" target="_blank" rel="noopener">github.com/abdulrahimhm78/agile-metrics-and-flow</a></p>
+      </div>
 
-<section>
-<h2>Certifications</h2>
-<div class="card">
-<ul>
-<li>PMP® — PMI</li>
-<li>SAFe® 6 Agilist</li>
-<li>PSM™, PSPO™, PAL™ — Scrum.org</li>
-<li>Lean Six Sigma White Belt</li>
-</ul>
-</div>
-</section>
+      <div class="job">
+        <h3>🧭 Scaled Agile Delivery</h3>
+        <div class="meta">Program-level execution practices</div>
+        <ul>
+          <li>PI preparation and PI Planning (Day 1 & Day 2)</li>
+          <li>Cross-team dependency identification</li>
+          <li>Risk escalation and delivery health reporting</li>
+        </ul>
+        <p class="small-note">➡️ <a href="https://github.com/abdulrahimhm78/scaled-agile-delivery" target="_blank" rel="noopener">github.com/abdulrahimhm78/scaled-agile-delivery</a></p>
+      </div>
 
-<section>
-<h2>Education</h2>
-<div class="card">
-<ul>
-<li>MBA — Webster University</li>
-<li>Bachelor of Business Administration — University of Madras</li>
-</ul>
-</div>
-</section>
+      <div class="job">
+        <h3>⚙️ Jira Governance</h3>
+        <div class="meta">Enterprise Jira standards supporting transparency</div>
+        <ul>
+          <li>Scrum and Kanban board governance</li>
+          <li>Workflow and issue-type standards</li>
+          <li>Backlog readiness and stale backlog management</li>
+          <li>Executive dashboards and reporting</li>
+        </ul>
+        <p class="small-note">➡️ <a href="https://github.com/abdulrahimhm78/jira-governance" target="_blank" rel="noopener">github.com/abdulrahimhm78/jira-governance</a></p>
+      </div>
 
-<section>
-<h2>Resume</h2>
-<a class="btn btn-primary" href="Abdul_Rahim_Resume.docx" target="_blank">
-Download Resume
-</a>
-</section>
+      <div class="small-note">
+        Suggested use: start with Portfolio → review repositories top-down → treat artifacts as operating standards (not templates) → reference during interviews and delivery discussions.
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (FULL NARRATIVE — YOUR TEXT, DE-DUPED) -->
+  <section>
+    <h2>Key Projects & Delivery Initiatives</h2>
+    <div class="card">
+
+      <div class="job">
+        <h3>Data & Analytics Platform Delivery Enhancement</h3>
+        <div class="meta">Analytics Pipelines · API Services · Data Integration Platforms · Enterprise Security Alignment</div>
+        <p class="context">
+          Supported engineering squads working on analytics pipelines, API services, and data integration platforms in a data-driven enterprise environment.
+          The work involved staying close to teams running Agile ceremonies, helping prioritize backlogs, and facilitating technical planning discussions
+          while keeping architecture direction and security requirements in view.
+        </p>
+        <p class="context">
+          After a few sprints, introduced practical delivery signals such as cycle time, lead time, and defect leakage to ground planning conversations and
+          surface risk earlier, especially when timelines tightened. Documentation was an ongoing pain point, so standardized story templates and shared
+          spaces were put in place to reduce rework and repeated clarification.
+        </p>
+        <p class="context">
+          Worked day to day with data engineers, QA automation teams, and platform architects to smooth handoffs and resolve issues quickly. This tighter
+          coordination helped teams deliver more predictably and contributed to better platform stability over time.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Enterprise Cloud Migration & Infrastructure Modernization</h3>
+        <div class="meta">On-Prem to Cloud · DevOps · Security & Compliance · Release Sequencing</div>
+        <p class="context">
+          Led several cross-functional Agile squads responsible for moving mission-critical applications from on-premises environments into secure cloud
+          infrastructure within a regulated enterprise. The work required close coordination across architecture, DevOps, security, and compliance teams,
+          particularly during PI Planning and ongoing Scrum ceremonies where dependencies and sequencing had to be worked through in detail.
+        </p>
+        <p class="context">
+          Stopped relying on optimistic timelines and instead used a small set of delivery metrics to make progress and bottlenecks visible. Tightened
+          entry and exit criteria by reinforcing Definition of Ready and Definition of Done, which reduced rework and improved quality at handoff points.
+        </p>
+        <p class="context">
+          Worked closely with engineering and DevOps teams to enable automated deployment pipelines and stabilize environments. Once teams got used to the
+          new way of working, releases became more frequent, stakeholder conversations became calmer, and infrastructure costs were easier to manage.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Financial Systems Delivery & Regulatory Compliance Alignment</h3>
+        <div class="meta">Financial Processing · Customer Portals · Compliance Reporting · Audit Readiness</div>
+        <p class="context">
+          Led Agile teams responsible for delivering enhancements to financial processing systems, customer-facing portals, and compliance-driven reporting
+          in a highly regulated environment. Much of the work involved regular collaboration with risk, audit, legal, and engineering partners to make sure
+          delivery decisions stayed aligned with regulatory expectations and audit requirements.
+        </p>
+        <p class="context">
+          Introduced sprint-level metrics, burn-down tracking, and release forecasting to improve transparency and give stakeholders a clearer view of
+          progress and risk. After several iterations, focused more deliberately on improving backlog readiness and reinforcing continuous testing habits,
+          which helped reduce production incidents and improve overall system stability without pushing teams into unsustainable delivery patterns.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Large-Scale Agile Transformation & Delivery Governance</h3>
+        <div class="meta">Scrum · Kanban · Cross-Team Coordination · Leadership Alignment</div>
+        <p class="context">
+          Led Agile transformation efforts across multiple teams moving away from traditional delivery models and into Scrum and Kanban ways of working.
+          A large part of the role involved working directly with leaders, product partners, and engineering teams to reset expectations, clarify
+          accountability, and create space for more open, data-driven conversations about delivery.
+        </p>
+        <p class="context">
+          Introduced practices such as Scrum of Scrums, dependency mapping, and lightweight maturity assessments to make cross-team coordination issues
+          visible and address them early. Over several quarters, standardized core ceremonies and reporting so risks surfaced earlier and delivery became
+          more predictable.
+        </p>
+      </div>
+
+      <div class="job">
+        <h3>Omni-Channel Retail Platform Optimization</h3>
+        <div class="meta">Web · Mobile · In-Store Integrations · Release Planning · Flow Optimization</div>
+        <p class="context">
+          Supported domain-aligned product teams working on omni-channel commerce platforms spanning web, mobile, and in-store integrations. Day to day,
+          this meant facilitating Agile delivery activities such as backlog refinement, estimation, and release planning to help teams commit to work they
+          could deliver predictably.
+        </p>
+        <p class="context">
+          Worked closely with product managers, UX designers, QA, and engineering leadership to smooth workflow, address bottlenecks, and reduce cycle time
+          while keeping customer experience goals in focus. Introduced WIP limits and practical flow optimization techniques to help teams manage work in
+          progress more intentionally. Over time, these changes increased throughput, reduced production defects, and improved delivery transparency across
+          distributed teams.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EMPLOYMENT HISTORY (FULL DETAILS FROM RESUME) -->
+  <section>
+    <h2>Employment History</h2>
+    <div class="card">
+
+      <div class="job">
+        <h3>Fidelity Investments — Senior Scrum Master / Agile Delivery Lead</h3>
+        <div class="meta">Apr 2025 – Present · Westlake, TX</div>
+        <p class="context">
+          Enterprise modernization of Fidelity’s Health & Welfare Benefits platform supporting millions of participants across enrollment, eligibility,
+          payroll, billing, APIs, and large client migrations in a regulated, high-availability environment—aligning delivery execution with enterprise
+          business outcomes.
+        </p>
+        <ul>
+          <li>Improved sprint and PI predictability by ~30%+ by correcting planning readiness, enforcing backlog quality, and aligning capacity with execution constraints</li>
+          <li>Reduced sprint spillover by ~25% using flow metrics (cycle time, throughput, WIP) to detect bottlenecks early and correct execution paths mid-sprint</li>
+          <li>Improved commitment reliability by treating capacity and cross-team dependencies as constraints before PI commitment across enterprise platform and API teams</li>
+          <li>Prevented late-stage integration and release risk by making dependency ownership explicit across cross-team and cross-platform initiatives, coaching teams on proactive risk ownership</li>
+          <li>Increased executive-level visibility into delivery health using Jira and Jira Align dashboards covering predictability, execution risk, and dependency posture</li>
+          <li>Served as the Agile Delivery Lead for senior leadership, facilitating stakeholder alignment and delivery trade-off decisions across 6–10 squads and quarterly PI commitments</li>
+          <li>Supported multi-year enterprise platform modernization roadmap planning and delivery alignment across teams and shared services</li>
+          <li>Leveraged AI-assisted backlog analysis and automated reporting dashboards to enhance sprint planning accuracy and reduce manual tracking effort</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>TISTA Science & Technology Corp — Senior Scrum Master / Agile Delivery Lead</h3>
+        <div class="meta">Oct 2023 – Mar 2025 · Rockville, MD</div>
+        <p class="context">
+          Multi-year USDA FPAC cloud migration moving mission-critical systems from on-prem DISC to AWS, enabling centralized governance, scalability,
+          and uninterrupted operations across multiple federal agencies, supporting enterprise portfolio modernization objectives.
+        </p>
+        <ul>
+          <li>Led 2–3 cross-functional Scrum teams, coaching delivery practices and stakeholder alignment, delivering enterprise cloud and platform modernization initiatives within a SAFe environment</li>
+          <li>Improved PI predictability by ~30% by enforcing disciplined backlog refinement, planning readiness, and realistic capacity alignment prior to commitment</li>
+          <li>Implemented Azure DevOps dashboards to provide real-time visibility into delivery health, flow metrics, risks, and cross-team dependencies for leadership</li>
+          <li>Improved delivery stability by using PI Planning and Inspect & Adapt as decision forums to surface execution risk, dependency gaps, and capacity misalignment early across distributed teams</li>
+          <li>Removed systemic impediments, reducing rework and late-stage defects by ~30% and improving overall release stability</li>
+          <li>Strengthened dependency and risk management across shared platform and data services, minimizing unplanned scope changes and delivery delays</li>
+          <li>Improved leadership decision quality by making sequencing, readiness, and dependency posture visible throughout the PI</li>
+          <li>Supported compliance-driven delivery expectations in a regulated federal environment with audit-ready execution visibility</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>Five Below Inc. — Senior Scrum Master / Agile Delivery Lead</h3>
+        <div class="meta">Jan 2022 – May 2023 · Philadelphia, PA</div>
+        <p class="context">
+          Enterprise data and analytics transformation modernizing data quality, governance, BI workflows, and executive reporting across Marketing, Product,
+          and Data organizations—supporting portfolio-level digital modernization and business decision enablement.
+        </p>
+        <ul>
+          <li>Improved PI predictability by ~30% by enforcing backlog readiness as a prerequisite for planning commitments and aligning capacity and dependencies across platform and data teams</li>
+          <li>Increased delivery transparency and executive-level visibility by implementing Azure DevOps dashboards tracking risks, dependencies, and delivery trends in real time</li>
+          <li>Reduced rework and late-stage defects by ~30% through early risk identification and removal of systemic impediments impacting execution flow</li>
+          <li>Enabled consistent, on-time execution across 2–3 cross-functional Scrum teams, coaching delivery practices and facilitating stakeholder alignment</li>
+          <li>Strengthened dependency and risk management across shared data and analytics services, reducing unplanned scope changes and delivery volatility</li>
+          <li>Delivered enterprise data platform outcomes spanning analytics, data governance, BI modernization, and reporting for marketing, product, and operations teams</li>
+          <li>Improved planning conversations by grounding commitments in flow signals and backlog readiness rather than optimism</li>
+          <li>Maintained predictable cadence by tightening refinement, clarifying acceptance criteria, and improving cross-team handoffs</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>Meijer Inc. — Senior Scrum Master / Agile Delivery Lead</h3>
+        <div class="meta">Apr 2021 – Jan 2022 · Grand Rapids, MI</div>
+        <p class="context">
+          Cloud-native in-store fulfillment and order orchestration platform enabling curbside pickup, optimized pick paths, and high-volume omnichannel order
+          processing—supporting enterprise digital-commerce scalability and customer-experience outcomes.
+        </p>
+        <ul>
+          <li>Improved sprint predictability by ~35% across three parallel Agile teams by enforcing backlog rigor, realistic capacity planning, and flow-based execution</li>
+          <li>Enabled reliable delivery of cloud-native fulfillment and mobile platforms by improving coordination across pickup, staging, and application teams</li>
+          <li>Reduced late-stage defect discovery by introducing test-case readiness and acceptance-criteria validation during backlog refinement</li>
+          <li>Led SAFe-aligned PI Planning, facilitating cross-team decision making and dependency ownership across shared enterprise services</li>
+          <li>Increased delivery transparency through consistent Scrum practices, Agile metrics, and Jira-based tracking with real-time dashboard visibility</li>
+          <li>Strengthened cross-team collaboration and release readiness within a complex enterprise environment supporting high-volume release cycles</li>
+          <li>Improved stakeholder confidence through clear sprint goals, consistent reviews, and visible trade-offs when constraints emerged</li>
+          <li>Coached teams toward vertical slicing and sustainable delivery habits that improved commitment reliability</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>Petco Health and Wellness Company Inc. — Senior Scrum Master / Agile Delivery Lead</h3>
+        <div class="meta">Aug 2020 – Mar 2021 · San Diego, CA</div>
+        <p class="context">
+          Cloud-based enterprise data warehousing and analytics platform (Snowflake) supporting predictive modeling, dashboards, and data-driven retail decisions—
+          enabling portfolio-level data modernization and executive decision support.
+        </p>
+        <ul>
+          <li>Stabilized Agile delivery execution during shifting priorities and operational pressure across enterprise data platform initiatives using disciplined Scrum practices</li>
+          <li>Reduced rework by ~30% through structured backlog refinement, improved acceptance criteria, and consistent enforcement of DoR/DoD</li>
+          <li>Improved delivery predictability by moving teams from reactive execution to commitment-based sprint delivery with realistic planning and accountability</li>
+          <li>Strengthened cross-functional collaboration across Product, Engineering, QA, and Analytics, improving release confidence and alignment</li>
+          <li>Increased sprint reliability and transparency using Jira dashboards and delivery metrics to surface progress, risks, and blockers early</li>
+          <li>Enabled consistent delivery of cloud-based analytics capabilities supporting timely, data-driven business decision-making</li>
+          <li>Improved handoffs and reduced churn by tightening story readiness and clarifying requirements earlier in the lifecycle</li>
+          <li>Maintained momentum while protecting sustainable pace and improving delivery stability over time</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>Computronics Inc. — Senior Scrum Master / Delivery Lead</h3>
+        <div class="meta">Oct 2016 – Jul 2020 · Frisco, TX</div>
+        <p class="context">
+          Enterprise and client-facing digital platforms built on a cloud-based B2C CRM and e-commerce ecosystem supporting end-to-end customer journeys—
+          enabling portfolio-level digital modernization and revenue-driving customer-experience outcomes.
+        </p>
+        <ul>
+          <li>Led Agile delivery across multiple enterprise and client-facing digital platforms, improving on-time delivery and execution reliability</li>
+          <li>Accelerated team ramp-up in low-maturity Agile environments by introducing Scrum practices that improved predictability and planning discipline</li>
+          <li>Increased transparency by establishing clear sprint goals, backlog readiness standards, and outcome-based tracking with dashboard visibility</li>
+          <li>Reduced delivery risk by proactively managing cross-team dependencies and enforcing disciplined refinement prior to sprint commitment</li>
+          <li>Improved stakeholder confidence through consistent visibility into progress, risks, and commitments; strengthened cross-team decision making</li>
+          <li>Enabled scalable Agile execution across distributed teams supporting mission-critical enterprise systems and high-volume release cycles</li>
+          <li>Improved delivery health by treating constraints (readiness, dependencies, WIP) as primary drivers of predictability</li>
+          <li>Established repeatable governance practices that improved execution quality without adding process overhead</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>Sears Holdings Corporation — Business Operations / Marketplace Account Manager</h3>
+        <div class="meta">Mar 2011 – Sep 2016 · Hoffman Estates, IL</div>
+        <p class="context">
+          Large-scale marketplace and e-commerce operations coordinating execution across business, technology, vendors, and marketplace partners—supporting
+          portfolio-level digital-commerce growth and revenue optimization.
+        </p>
+        <ul>
+          <li>Owned enterprise marketplace category performance, consistently achieving sales and commission targets through data-driven merchandising decisions and operational optimization</li>
+          <li>Led multi-stakeholder operational workflows supporting enterprise e-commerce platforms; improved cross-functional alignment across business and technology</li>
+          <li>Improved cycle efficiency by standardizing workflows and applying analytics to identify and correct operational bottlenecks</li>
+          <li>Partnered with technology teams to resolve systemic constraints, improving execution reliability and scalable platform growth</li>
+          <li>Coordinated work intake, prioritization, and tracking using Jira and Confluence to increase transparency and accountability</li>
+          <li>Managed dependencies across vendors, internal teams, and marketplace operations to improve end-to-end execution alignment</li>
+          <li>Strengthened reporting and trend visibility through structured dashboards and operational metrics</li>
+          <li>Built foundational delivery leadership skills later applied to enterprise Agile delivery and governance</li>
+        </ul>
+      </div>
+
+      <!-- Earlier career roles (from LinkedIn profile context and prior history) -->
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>Web Traffic — SEO & PPC Campaign Manager</h3>
+        <div class="meta">Aug 2008 – Dec 2010 · Digital Marketing / Analytics</div>
+        <ul>
+          <li>Owned campaign execution, optimization, and reporting across SEO and PPC portfolios</li>
+          <li>Built repeatable performance reporting and improvement cycles to stabilize outcomes</li>
+          <li>Coordinated priorities and changes with clients and internal teams to reduce churn</li>
+          <li>Applied data-driven decision making to improve conversion outcomes and spend efficiency</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="job">
+        <h3>PC & Laptop Services — IT Support Specialist</h3>
+        <div class="meta">Sep 2002 – Aug 2008 · IT Support / Operations</div>
+        <ul>
+          <li>Delivered hands-on technical support, troubleshooting, and service restoration for end users</li>
+          <li>Managed intake, prioritization, and completion tracking to sustain predictable throughput</li>
+          <li>Improved service consistency through repeatable troubleshooting standards and checklists</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TOOLS / PLATFORMS (EXPANDED) -->
+  <section>
+    <h2>Tools, Platforms & Collaboration</h2>
+    <div class="card columns">
+      <ul>
+        <li>Jira · Jira Align · Azure DevOps</li>
+        <li>Confluence</li>
+        <li>Microsoft Teams · Zoom</li>
+        <li>Dashboarding & automated reporting practices</li>
+      </ul>
+      <ul>
+        <li>Enterprise platform delivery</li>
+        <li>Cloud migration delivery (AWS program execution leadership)</li>
+        <li>Data engineering / analytics delivery coordination</li>
+        <li>Security, compliance, and regulated delivery alignment</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Webster University</strong> — Master of Business Administration (MBA)</li>
+        <li class="small-note"><strong>University of Madras</strong> — Bachelor of Business Administration (BBA)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS (FULL LIST FROM RESUME + LINKEDIN PDF) -->
+  <section>
+    <h2>Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>Project Management Professional (PMP)® — Project Management Institute (PMI)</li>
+        <li>SAFe® 6 Agilist — Scaled Agile</li>
+        <li>SAFe Scrum Master (SSM) — Scaled Agile</li>
+        <li>Professional Scrum Master I (PSM I) — Scrum.org</li>
+        <li>Professional Scrum Product Owner I (PSPO I) — Scrum.org</li>
+        <li>Professional Agile Leadership I (PAL I) — Scrum.org</li>
+        <li>Certified Agile Coach — Chicago State University</li>
+        <li>Lean Six Sigma White Belt</li>
+        <li>Scrum: Advanced</li>
+      </ul>
+      <div class="small-note">Languages: English (Full Professional)</div>
+    </div>
+  </section>
+
+  <!-- RESUME DOWNLOAD (WORKING LINK) -->
+  <section>
+    <h2>Resume</h2>
+    <div class="card">
+      <p><strong>Download:</strong> Resume document</p>
+      <a class="btn btn-primary" href="Abdul_Rahim_Resume.docx" target="_blank" rel="noopener">
+        Download Resume (DOCX)
+      </a>
+      <div class="small-note">
+        Important: the filename in your GitHub Pages repo must exactly match <strong>Abdul_Rahim_Resume.docx</strong>.
+        If your file name has spaces (example: “Abdul Rahim Resume.docx”), rename it to match this link.
+      </div>
+    </div>
+  </section>
 
 </main>
 
