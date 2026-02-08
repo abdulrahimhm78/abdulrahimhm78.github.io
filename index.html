@@ -62,13 +62,14 @@ header{
 
   background-image:url('Banner.png');
   background-repeat:no-repeat;
-  background-position:top center;
+  background-position:center top;
   background-size:contain;
   background-color:#eef2f7;
 
-  height:380px;
+  min-height:340px;
+  display:flex;
+  align-items:center;
 }
-
 header::before{
   content:"";
   position:absolute;
@@ -87,16 +88,15 @@ padding:90px 0 60px;
 }
   
 .hero{
-position:relative;
-z-index:1;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:36px;
-padding:84px 0 64px;
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+  padding:40px 0 30px;
 }
-
-.hero-text{max-width:74%}
+.hero-text{max-width:68%}
 
 .hero h1{
 margin:0 0 12px;
@@ -144,6 +144,7 @@ box-shadow:0 20px 45px rgba(0,0,0,.25);
 background:#fff;
 position:relative;
 z-index:5;
+  margin-top:-10px;
 }
 
 /* ===== MAIN ===== */
