@@ -7,7 +7,7 @@
 <title>Abdul Rahim Hakim Mohammed | Senior Scrum Master · Agile Delivery Lead · Technical Program Manager</title>
 
 <meta name="description"
-content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise platform, cloud, and data delivery through predictable execution, flow metrics, backlog discipline, and delivery governance across financial services, healthcare, federal, and retail domains.">
+content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise platform, cloud, and data delivery through predictable execution, flow metrics, backlog discipline, and delivery governance.">
 
 <link rel="canonical" href="https://abdulrahimhm78.github.io/">
 <meta name="robots" content="index,follow">
@@ -26,30 +26,151 @@ content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise plat
 --brand:#0a66c2;
 --border:#e2e8f0;
 }
+
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;}
-.container{max-width:1140px;margin:auto;padding:0 24px;}
+
+body{
+margin:0;
+font-family:Inter,Arial,sans-serif;
+background:var(--bg);
+color:var(--ink);
+line-height:1.65;
+}
+
+.container{
+max-width:1140px;
+margin:auto;
+padding:0 24px;
+}
+
+/* ===== HEADER BANNER ===== */
+
 header{
-background:linear-gradient(135deg,#0a66c2 0%,#3b82f6 35%,#60a5fa 65%,#93c5fd 100%);
-color:#fff;border-bottom:1px solid rgba(255,255,255,.15);}
-.header-inner{padding:52px 0 44px;}
-header h1{margin:0 0 6px;font-size:2.4rem;font-weight:900;text-shadow:0 2px 8px rgba(0,0,0,.25);}
-header p{margin:4px 0;color:#e5e7eb;}
-header .title{color:#fff;font-weight:700;}
+position:relative;
+color:#ffffff;
+border-bottom:1px solid rgba(255,255,255,.15);
+background:url('Banner.png') center/cover no-repeat;
+}
+
+/* Glass Blue Overlay */
+header::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(
+180deg,
+rgba(37,99,235,0.55) 0%,
+rgba(37,99,235,0.45) 40%,
+rgba(15,23,42,0.75) 100%
+);
+z-index:0;
+}
+
+.header-inner{
+position:relative;
+z-index:1;
+padding:64px 0 56px;
+}
+
+header h1{
+margin:0 0 6px;
+font-size:2.4rem;
+font-weight:900;
+text-shadow:0 3px 14px rgba(0,0,0,0.5);
+}
+
+header p{
+margin:4px 0;
+color:#e5e7eb;
+}
+
+header .title{
+color:#ffffff;
+font-weight:700;
+}
+
+.tools{
+margin-top:10px;
+font-size:0.92rem;
+letter-spacing:0.4px;
+opacity:0.9;
+}
+
+/* ===== MAIN ===== */
+
 main{padding:40px 0 0}
+
 section{margin-bottom:52px}
-section h2{margin:0 0 16px;font-size:1.45rem;font-weight:900;border-left:4px solid #0a66c2;padding-left:12px;}
-.card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px;}
-.funnel{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
-.btn{display:inline-block;margin-top:16px;padding:13px 22px;border-radius:10px;font-weight:800;text-decoration:none;}
-.btn-primary{background:#0a66c2;color:#fff;box-shadow:0 4px 14px rgba(10,102,194,.35);}
-.btn-secondary{background:#fff;border:1px solid var(--border);color:var(--ink);}
+
+section h2{
+margin:0 0 16px;
+font-size:1.45rem;
+font-weight:900;
+border-left:4px solid #0a66c2;
+padding-left:12px;
+}
+
+.card{
+background:var(--panel);
+border:1px solid var(--border);
+border-radius:14px;
+padding:28px;
+}
+
+/* Buttons */
+
+.btn{
+display:inline-block;
+margin-top:16px;
+padding:13px 22px;
+border-radius:10px;
+font-weight:800;
+text-decoration:none;
+}
+
+.btn-primary{
+background:#0a66c2;
+color:#fff;
+box-shadow:0 4px 14px rgba(10,102,194,.35);
+}
+
 .job{margin-bottom:40px}
-.job h3{margin:0 0 6px;font-size:1.15rem;font-weight:800;}
-.job .meta{color:var(--muted);font-size:.95rem;margin-bottom:10px;}
-.columns{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
-footer{border-top:1px solid var(--border);margin-top:64px;padding:22px 0;text-align:center;font-size:.85rem;color:var(--muted);background:#fff;}
-@media (max-width:900px){.funnel,.columns{grid-template-columns:1fr}header h1{font-size:2rem}}
+
+.job h3{
+margin:0 0 6px;
+font-size:1.15rem;
+font-weight:800;
+}
+
+.job .meta{
+color:var(--muted);
+font-size:.95rem;
+margin-bottom:10px;
+}
+
+.columns{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px;
+}
+
+footer{
+border-top:1px solid var(--border);
+margin-top:64px;
+padding:22px 0;
+text-align:center;
+font-size:.85rem;
+color:var(--muted);
+background:var(--panel);
+}
+
+@media (max-width:900px){
+.columns{grid-template-columns:1fr}
+header h1{font-size:2rem}
+}
 </style>
 </head>
 
@@ -61,7 +182,9 @@ footer{border-top:1px solid var(--border);margin-top:64px;padding:22px 0;text-al
 <p class="title">Senior Scrum Master · Agile Delivery Lead · Technical Program Manager</p>
 <p>Dallas, TX · Remote · 214-281-2447 · abdulrahimhm78@gmail.com</p>
 <p>Portfolio · abdulrahimhm78.github.io · GitHub · github.com/abdulrahimhm78 · LinkedIn · linkedin.com/in/abdul-rahimhm</p>
-<p>Scrum · SAFe · Kanban · PI Planning · Flow Metrics · Jira · Azure DevOps · Platform · Cloud · Data</p>
+<p class="tools">
+Scrum · SAFe · Jira · Azure DevOps · AWS · ServiceNow · Miro · Google Cloud
+</p>
 </div>
 </header>
 
@@ -72,19 +195,13 @@ footer{border-top:1px solid var(--border);margin-top:64px;padding:22px 0;text-al
 <div class="card">
 <p>
 Senior Scrum Master and Agile Delivery Lead specializing in stabilizing enterprise platform,
-cloud, and data delivery when backlog readiness, capacity assumptions,
-or cross-team dependencies surface late. Operates across team,
-program, and portfolio levels helping organizations move from reactive
-delivery to constraint-aware execution grounded in visible planning inputs.
+cloud, and data delivery environments where backlog readiness, capacity realism,
+and cross-team dependencies directly impact predictability.
 </p>
 <p>
-Recognized for improving sprint and PI predictability by 30%+, reducing
-rework and spillover by ~30%, enabling consistent on-time releases,
-and strengthening executive confidence through flow metrics,
-capacity realism, backlog discipline, and outcome-driven reporting.
-</p>
-<p>
-Domains: Financial Services · Healthcare · Federal · Retail · Data & Analytics · Platform Modernization
+Known for improving sprint and PI predictability by 30%+, reducing rework,
+and enabling executive confidence through flow metrics,
+backlog discipline, and realistic commitment planning.
 </p>
 </div>
 </section>
@@ -97,34 +214,30 @@ Domains: Financial Services · Healthcare · Federal · Retail · Data & Analyti
 <div class="meta">Apr 2025 – Present · Westlake, TX</div>
 <ul>
 <li>Improved sprint and PI predictability by 30%+ through backlog readiness and realistic capacity alignment.</li>
-<li>Reduced sprint spillover by ~25% using cycle time, throughput, and WIP metrics.</li>
-<li>Strengthened cross-team dependency ownership across enterprise APIs and platforms.</li>
-<li>Enabled executive-level dashboards via Jira & Jira Align automation.</li>
-<li>Partnered with Product Owners, Engineering Managers, and Architecture leadership.</li>
+<li>Reduced sprint spillover by ~25% using flow metrics.</li>
+<li>Enabled executive dashboards using Jira & Jira Align.</li>
 <li>Supported 6–10 squads and multi-year modernization roadmap.</li>
 </ul>
 </div>
 
 <div class="job">
-<h3>TISTA Science & Technology Corp — Senior Scrum Master / Agile Delivery Lead</h3>
+<h3>TISTA Science & Technology Corp — Senior Scrum Master</h3>
 <div class="meta">Oct 2023 – Mar 2025 · Rockville, MD</div>
 <ul>
-<li>Led USDA FPAC AWS cloud migration initiatives across 2–3 Scrum teams.</li>
-<li>Improved PI predictability by ~30% via disciplined backlog refinement.</li>
-<li>Implemented Azure DevOps dashboards for delivery health transparency.</li>
-<li>Reduced late-stage defects and rework by ~30%.</li>
-<li>Strengthened dependency and risk management across shared services.</li>
+<li>Led USDA AWS cloud modernization initiatives.</li>
+<li>Improved PI predictability by ~30%.</li>
+<li>Implemented Azure DevOps dashboards.</li>
+<li>Reduced late-stage defects by ~30%.</li>
 </ul>
 </div>
 
 <div class="job">
-<h3>Five Below Inc. — Senior Scrum Master / Agile Delivery Lead</h3>
+<h3>Five Below Inc. — Senior Scrum Master</h3>
 <div class="meta">Jan 2022 – May 2023 · Philadelphia, PA</div>
 <ul>
-<li>Led enterprise data governance and analytics modernization.</li>
-<li>Improved PI predictability by ~30% through backlog rigor.</li>
+<li>Strengthened enterprise data governance and analytics modernization.</li>
+<li>Improved PI predictability by ~30%.</li>
 <li>Delivered executive dashboards improving transparency.</li>
-<li>Aligned marketing, product, and BI teams under unified data strategy.</li>
 </ul>
 </div>
 
@@ -135,7 +248,6 @@ Domains: Financial Services · Healthcare · Federal · Retail · Data & Analyti
 <li>Improved sprint predictability by ~35% across three Agile teams.</li>
 <li>Introduced test-case readiness during backlog refinement.</li>
 <li>Facilitated SAFe PI Planning and Scrum of Scrums.</li>
-<li>Strengthened release readiness for cloud-native fulfillment systems.</li>
 </ul>
 </div>
 
@@ -144,8 +256,8 @@ Domains: Financial Services · Healthcare · Federal · Retail · Data & Analyti
 <div class="meta">Aug 2020 – Mar 2021 · San Diego, CA</div>
 <ul>
 <li>Stabilized Agile delivery during organizational change.</li>
-<li>Reduced rework by ~30% through improved acceptance criteria.</li>
-<li>Strengthened cross-functional collaboration across QA, Product, and Analytics.</li>
+<li>Reduced rework by ~30%.</li>
+<li>Strengthened cross-functional collaboration.</li>
 </ul>
 </div>
 
@@ -165,7 +277,7 @@ Domains: Financial Services · Healthcare · Federal · Retail · Data & Analyti
 <ul>
 <li>Managed cross-functional enterprise e-commerce initiatives.</li>
 <li>Improved operational efficiency and governance through analytics.</li>
-<li>Built foundational delivery leadership and dependency coordination skills.</li>
+<li>Built foundational delivery leadership skills.</li>
 </ul>
 </div>
 
@@ -175,17 +287,15 @@ Domains: Financial Services · Healthcare · Federal · Retail · Data & Analyti
 <h2>Skills, Tools & Frameworks</h2>
 <div class="card columns">
 <ul>
-<li>Scrum · SAFe · Kanban · Scrumban · Scrum of Scrums</li>
-<li>PI Planning · Inspect & Adapt · Release Planning</li>
-<li>Flow Metrics · Cycle Time · Throughput · WIP · Predictability</li>
-<li>Capacity Planning · Forecasting · Dependency Ownership</li>
-<li>Constraint-Aware Planning · Outcome Reporting</li>
+<li>Scrum · SAFe · Kanban · Scrumban</li>
+<li>PI Planning · Inspect & Adapt</li>
+<li>Flow Metrics · Cycle Time · Throughput</li>
+<li>Capacity Planning · Forecasting</li>
 </ul>
 <ul>
-<li>Jira · Jira Align · Azure DevOps · Confluence</li>
-<li>Microsoft Teams · Zoom · Miro · Mural</li>
-<li>AWS · Google Cloud · Platform & Data Delivery</li>
-<li>Regulated & Compliance Environments</li>
+<li>Jira · Azure DevOps · Confluence</li>
+<li>AWS · Google Cloud</li>
+<li>Platform, Cloud & Data Delivery</li>
 <li>English — Full Professional</li>
 </ul>
 </div>
@@ -195,10 +305,9 @@ Domains: Financial Services · Healthcare · Federal · Retail · Data & Analyti
 <h2>Certifications</h2>
 <div class="card">
 <ul>
-<li>PMP® — Project Management Institute</li>
+<li>PMP® — PMI</li>
 <li>SAFe® 6 Agilist</li>
 <li>PSM™, PSPO™, PAL™ — Scrum.org</li>
-<li>Certified Agile Coach</li>
 <li>Lean Six Sigma White Belt</li>
 </ul>
 </div>
