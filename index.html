@@ -58,31 +58,26 @@ padding:0 26px;
 header{
   position:relative;
   border-bottom:none;
-  background-image:url('Banner.png');
-  background-repeat:no-repeat;
-  background-position:center top;
-  background-size:100% auto;   /* full width, no side grey bars */
   background-color:#eef2f7;
 
-  padding-top:170px;            /* banner height */
-  padding-bottom:10px;
+  /* WATERMARK IMAGE */
+  background-image:url('Banner.png');
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:contain;     /* show entire logo grid */
+  min-height:340px;
 }
-header .container{
-  max-width:100%;               /* override 1180px only in header */
-  padding:0 40px;               /* keep side spacing for text */
-}
-
 header::before{
   content:"";
   position:absolute;
   inset:0;
-  background:linear-gradient(
-    180deg,
-rgba(255,255,255,.30)
-rgba(255,255,255,.50)
-rgba(241,245,249,.75)
-  );
+
+  /* white fade overlay */
+  background:rgba(255,255,255,0.78);
+
   z-index:0;
+}
+
 }
 .hero{
   position:relative;
