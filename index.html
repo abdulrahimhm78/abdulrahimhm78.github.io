@@ -55,7 +55,6 @@ padding:0 26px;
 }
 
 /* ===== HERO HEADER ===== */
-/* ===== HERO HEADER — FIX ===== */
 header{
   position:relative;
   border-bottom:none;
@@ -63,10 +62,12 @@ header{
   background-image:url('Banner.png');
   background-repeat:no-repeat;
   background-position:center top;
-  background-size:cover;   /* fill full width */
+  background-size:contain;
   background-color:#eef2f7;
 
-  min-height:360px;
+  min-height:auto;
+  padding-top:170px;
+  padding-bottom:10px;
 }
 
 header::before{
@@ -81,10 +82,6 @@ header::before{
   );
   z-index:0;
 }
-
-  .hero{
-padding:90px 0 60px;
-}
 .hero{
   position:relative;
   z-index:1;
@@ -92,8 +89,9 @@ padding:90px 0 60px;
   align-items:center;
   justify-content:space-between;
   gap:36px;
-  padding:50px 0 40px;
+  padding:40px 0 30px;
 }
+
 .hero-text{max-width:68%}
 
 .hero h1{
