@@ -55,24 +55,31 @@ padding:0 26px;
 }
 
 /* ===== HERO HEADER ===== */
+/* ===== HERO HEADER — FIX ===== */
 header{
-position:relative;
-border-bottom:1px solid rgba(2,6,23,.08);
-background:url('Banner.png') top center / 100% auto no-repeat;
-background-color:#eef2f7; /* fallback color */
-min-height:320px; /* controls banner height */
+  position:relative;
+  border-bottom:1px solid rgba(2,6,23,.08);
+
+  background-image:url('Banner.png');
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-size:100% auto;   /* shows full width without cutting */
+  background-color:#eef2f7;
+
+  padding-top:220px;            /* controls visible banner height */
 }
 
 header::before{
-content:"";
-position:absolute;inset:0;
-background:linear-gradient(
-180deg,
-rgba(255,255,255,.65) 0%,
-rgba(255,255,255,.85) 55%,
-rgba(241,245,249,.95) 100%
-);
-z-index:0;
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.45) 0%,
+    rgba(255,255,255,.70) 55%,
+    rgba(241,245,249,.90) 100%
+  );
+  z-index:0;
 }
 
   .hero{
