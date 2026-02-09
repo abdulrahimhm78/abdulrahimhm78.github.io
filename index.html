@@ -60,6 +60,7 @@ position:relative;
 border-bottom:none;
 background-color:#eef2f7;
 overflow:hidden;
+width:100%;
 }
 
 /* SOFT BLEND OVERLAY */
@@ -79,11 +80,9 @@ header::after{
   content:"";
   position:absolute;
   top:0;
-  left:50%;
-  transform:translateX(-50%);
-
+  left:0;
   width:100%;
-  max-width:1180px;     /* match container */
+/* match container */
   height:240px;
 
   background-image:url('Banner.png');
@@ -98,8 +97,10 @@ header::after{
 /* KEEP ALIGNMENT SAME AS BODY */
 header .container{
 max-width:1180px;
+margin:auto;
 padding:0 26px;
 }
+
 
 /* HERO LAYOUT */
 .hero{
