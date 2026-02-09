@@ -1,75 +1,105 @@
-Abdul Rahim Hakim Mohammed  
-Senior Scrum Master | Agile Delivery Lead | Technical Program Manager  
-Dallas, Texas, USA  
+# Abdul Rahim Hakim Mohammed
+## Senior Scrum Master · Agile Delivery Leader · RTE-Level Execution Partner
 
-Portfolio  
-https://abdulrahimhm78.github.io  
+I work at the intersection of **team-level execution and program-level alignment**, helping organizations move from activity-driven delivery to **predictable, outcome-driven execution**.  
 
-LinkedIn  
-https://www.linkedin.com/in/abdul-rahimhm/
+My primary focus is **Senior Scrum Master leadership**, with practical experience operating at **Release Train Engineer (RTE) altitude** — facilitating cross-team coordination, PI planning, dependency management, and delivery governance when scale demands it.
 
-## Professional Summary
-Senior Scrum Master and Agile Delivery Lead with experience supporting large-scale platform, cloud, and data initiatives in regulated enterprise environments. Works closely with Product, Engineering, and leadership teams to bring structure and clarity to delivery when priorities shift, dependencies surface late, or planning assumptions become unrealistic.
+---
 
-Focus is on practical execution — helping teams plan with realistic capacity, improve backlog readiness, and make delivery risks visible early. This approach has consistently improved sprint and PI predictability, reduced spillover, and strengthened confidence in delivery commitments across multi-team programs.
+## Where I Add Immediate Value
+I am typically engaged when:
+- PI commitments are repeatedly missed despite capable teams
+- Dependencies surface mid-sprint instead of pre-commitment
+- Backlogs are full but not truly ready
+- Velocity is reported, but predictability is absent
+- Leadership lacks a clear signal of delivery health
 
-This profile and portfolio reflect hands-on Scrum leadership based on real delivery environments rather than theory or ceremony-only facilitation.
+My role is not to increase ceremony — it is to **restore execution discipline and delivery confidence.**
 
-## What I Help Teams Improve
-- Strong Scrum execution and team enablement  
-- Backlog readiness and planning discipline  
-- Realistic capacity planning and dependency awareness  
-- Risk and impediment removal across teams  
-- Delivery transparency and predictability  
-- Calm, people-first leadership during delivery pressure  
+---
 
-## How I Typically Operate
-- Scrum team execution and maturity  
-- Multi-team and program-level coordination  
-- Enterprise platform, cloud, and data modernization  
-- Regulated and compliance-driven environments  
-- Stakeholder and executive alignment  
-- Technical delivery governance  
+## Delivery Outcomes
+- **30%+ improvement** in Sprint and PI Predictability  
+- **~25% reduction** in Spillover and Rework  
+- Coordinated **6–12 concurrent squads** across shared services  
+- Strengthened cross-team sequencing and integration readiness  
+- Shifted organizations from **velocity reporting to flow-based outcomes**
 
-## Core Focus Areas
-- Scaled Agile delivery using Scrum and SAFe  
-- Flow metrics such as cycle time, throughput, and WIP  
-- Capacity planning and dependency management  
-- Definition of Ready and Definition of Done discipline  
-- Delivery transparency and executive dashboards  
-- Outcome-based delivery and value stream alignment  
+---
 
-## Delivery Portfolio
+## How I Operate as a Senior Scrum Master
+- Treat **capacity and dependencies as constraints**, not afterthoughts  
+- Enforce **Definition of Ready and Definition of Done** as delivery controls  
+- Use **Flow Metrics** — Cycle Time, Throughput, WIP — to expose bottlenecks early  
+- Balance **team empowerment with accountability**  
+- Protect sustainable pace while improving commitment reliability  
+- Maintain delivery transparency through visible dashboards and signals  
+- Coach teams toward vertical slicing, not horizontal tasking
 
-### Enterprise Scrum Playbook
-Sprint planning, daily stand-ups, reviews, retrospectives, and accountability practices  
-https://github.com/abdulrahimhm78/enterprise-scrum-playbook
+---
 
-### Agile Metrics & Flow
-Cycle time, throughput, delivery health indicators, and anti-patterns  
-https://github.com/abdulrahimhm78/agile-metrics-and-flow
+## When Operating at RTE / Program Level
+- Facilitate **PI Planning preparation and alignment**  
+- Surface cross-team dependencies before commitments are locked  
+- Support Inspect & Adapt events with data-backed insights  
+- Maintain program-level delivery visibility without micromanaging teams  
+- Align sequencing decisions with business priorities and architectural runway  
+- Act as a stabilizing bridge between teams, Product, Architecture, and Leadership
 
-### Scaled Agile Delivery
-PI preparation, PI planning, dependency mapping, and risk escalation practices  
-https://github.com/abdulrahimhm78/scaled-agile-delivery
+---
 
-### Jira Governance
-Board standards, workflows, backlog management, and executive dashboards  
-https://github.com/abdulrahimhm78/jira-governance
+## Enterprise Delivery Domains
+Financial Services · Federal Programs · Healthcare · Retail · Data & Analytics · Platform Modernization · Cloud Migration · Regulated Environments
 
-## How to Use This Profile
-- Start with the portfolio to understand delivery approach  
-- Review repositories top-down as operating references  
-- Treat artifacts as field-tested standards rather than templates  
-- Use materials during interviews or delivery discussions if helpful  
+---
 
-## Professional Focus
-- Senior Scrum Mastery and Technical Delivery Leadership  
-- Scaled Agile Program Execution  
-- Flow Metrics and Predictability  
-- Enterprise Transparency and Governance  
-- Stakeholder and Leadership Alignment  
-- Platform, Cloud, and Data Delivery  
+## Operating Standards & Artifacts
 
-## Final Note
-This profile represents practical Agile delivery leadership centered on clarity, predictability, and sustainable execution. The goal is simple — help teams and leaders move from reactive delivery to realistic, commitment-based outcomes while keeping people and collaboration at the center.
+### 📘 Enterprise Scrum Playbook
+Practical Scrum execution standards used to stabilize team delivery.  
+🔗 https://github.com/abdulrahimhm78/enterprise-scrum-playbook
+
+### 📊 Agile Metrics & Flow
+Flow-based delivery metrics focused on predictability and execution health.  
+🔗 https://github.com/abdulrahimhm78/agile-metrics-and-flow
+
+### 🧭 Scaled Agile Delivery
+Program-level coordination practices supporting multi-team execution.  
+🔗 https://github.com/abdulrahimhm78/scaled-agile-delivery
+
+### ⚙️ Jira Governance
+Enterprise Jira discipline improving backlog hygiene and executive transparency.  
+🔗 https://github.com/abdulrahimhm78/jira-governance
+
+---
+
+## Tools & Platforms
+Jira · Jira Align · Azure DevOps · Confluence · Miro · Mural · GitHub · Microsoft Teams · Zoom
+
+---
+
+## Certifications
+PMP® · SAFe® 6 Agilist · SAFe Scrum Master · PSM I · PSPO I · PAL I · Certified Agile Coach
+
+---
+
+## Delivery Philosophy
+- **Readiness before commitment**
+- **Capacity is a constraint, not a guess**
+- **Flow over velocity**
+- **Transparency over optimism**
+- **Sustainable pace over short-term gains**
+- **Outcome alignment over activity reporting**
+
+---
+
+## Portfolio & Contact
+Portfolio: https://abdulrahimhm78.github.io  
+LinkedIn: https://www.linkedin.com/in/abdul-rahimhm/  
+Email: abdulrahimhm78@gmail.com  
+
+---
+
+> Effective delivery is not achieved by adding more process.  
+> It is achieved by correcting the few execution decisions that break predictability at scale — and making reliable delivery the norm.
