@@ -26,17 +26,26 @@ content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise plat
 --brand:#0a66c2;
 --border:#e4e9f2;
 --shadow:0 12px 32px rgba(2,6,23,.08);
+
 --radius:16px;
+--space-xs:6px;
+--space-sm:10px;
+--space-md:18px;
+--space-lg:28px;
+--space-xl:42px;
 }
 
 *{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
 
 body{
 margin:0;
 font-family:Inter,Arial,sans-serif;
 background:var(--bg);
 color:var(--ink);
-line-height:1.65;
+line-height:1.68;
+font-size:16px;
 }
 
 .container{
@@ -45,91 +54,142 @@ margin:auto;
 padding:0 26px;
 }
 
-/* HEADER */
+/* ===== HERO HEADER ===== */
 header{
 position:relative;
-background:#eef2f7;
+border-bottom:none;
+background-color:#eef2f7;
 overflow:hidden;
-min-height:260px;
+width:100%;
+min-height:260px;   /* ← THIS LINE */
 }
 
+/* SOFT BLEND OVERLAY */
 header::before{
 content:"";
 position:absolute;
 inset:0;
-background:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.75));
+background:linear-gradient(
+rgba(255,255,255,0.55),
+rgba(255,255,255,0.75)
+);
 z-index:0;
+pointer-events:none;
 }
-
+/* WATERMARK BANNER */
 header::after{
-content:"";
-position:absolute;
-top:0;
-left:50%;
-transform:translateX(-50%);
-width:100%;
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+
+  width:100%;
+  max-width:1180px;
+
+  height:200px;              /* smaller */
+  background-image:url('Banner.png');
+  background-repeat:no-repeat;
+  background-position:center 20px;
+  background-size:100% auto; /* key line */
+
+  opacity:0.18;
+  pointer-events:none;
+  z-index:0;
+}
+/* KEEP ALIGNMENT SAME AS BODY */
+header .container{
 max-width:1180px;
-height:200px;
-background:url('Banner.png') no-repeat center 20px / 100% auto;
-opacity:0.18;
-z-index:0;
+margin:auto;
+padding:0 26px;
 }
 
+
+/* HERO LAYOUT */
 .hero{
 position:relative;
 z-index:1;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 gap:36px;
 padding:50px 0 40px;
 }
 
 .hero-text{max-width:68%}
 
+/* NAME */
 .hero h1{
-margin:0;
-font-size:2.6rem;
+margin:0 0 10px;
+font-size:2.9rem;
 font-weight:900;
+color:#000;
+text-shadow:0 2px 4px rgba(0,0,0,0.15);
 }
 
+/* TITLE */
+.hero .title{
+margin:0 0 8px;
+font-size:1.25rem;
+font-weight:900;
+color:#0b1220;
+}
+
+/* META */
+.hero .meta-line{
+margin:4px 0;
+font-weight:700;
+color:#2a3445;
+}
+
+/* LINKS */
+.hero .links{
+margin-top:8px;
+font-weight:800;
+}
+
+.hero a{
+  color:#0a66c2;
+  text-decoration:none;
+  font-weight:900;
+  padding:2px 6px;
+  border-radius:6px;
+  transition:all .2s ease;
+}
+
+.hero a:hover{
+  background:#0a66c2;
+  color:#ffffff;
+  text-decoration:none;
+}
+
+.hero a:hover{text-decoration:underline}
+
+/* PROFILE PHOTO */
 .profile-pic{
-width:170px;
-height:170px;
+width:180px;
+height:180px;
 border-radius:50%;
-border:6px solid #fff;
 object-fit:cover;
+border:6px solid #ffffff;
 box-shadow:0 20px 45px rgba(0,0,0,.25);
-}
-
-/* CARDS */
-.card{
 background:#fff;
-border:1px solid var(--border);
-border-radius:16px;
-padding:28px;
-box-shadow:var(--shadow);
-margin-bottom:28px;
+position:relative;
+z-index:2;
 }
 
-.columns{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:28px;
-}
-
-footer{
+/* RESPONSIVE */
+@media (max-width:900px){
+.hero{
+flex-direction:column;
 text-align:center;
-padding:28px;
-border-top:1px solid var(--border);
-background:#fff;
-color:#556070;
 }
-
-@media(max-width:900px){
-.hero{flex-direction:column;text-align:center}
 .hero-text{max-width:100%}
-.profile-pic{width:140px;height:140px}
+.profile-pic{
+width:150px;
+height:150px;
+}
+.hero h1{font-size:2.2rem;}
 }
 </style>
 </head>
