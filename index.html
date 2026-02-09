@@ -18,6 +18,56 @@ content="Senior Scrum Master and Agile Delivery Lead stabilizing enterprise plat
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
+  .card{
+background:#ffffff;
+border:1px solid #e4e9f2;
+border-radius:16px;
+padding:28px;
+box-shadow:0 12px 32px rgba(2,6,23,.08);
+margin-bottom:28px;
+}
+
+.btn{
+display:inline-block;
+margin-top:16px;
+padding:12px 22px;
+border-radius:8px;
+font-weight:800;
+text-decoration:none;
+}
+
+.btn-primary{
+background:#0a66c2;
+color:#fff;
+}
+
+.btn-secondary{
+background:#ffffff;
+border:1px solid #e4e9f2;
+color:#0b1220;
+}
+
+.columns{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:28px;
+}
+
+.divider{
+height:1px;
+background:#e4e9f2;
+margin:28px 0;
+}
+
+.small-note{
+font-size:.92rem;
+color:#556070;
+margin-top:8px;
+}
+
+.job{margin-bottom:28px;}
+.meta{color:#556070;font-weight:700;}
+.context{margin-bottom:12px;}
 :root{
 --bg:#f4f6fb;
 --panel:#ffffff;
@@ -87,7 +137,7 @@ header::after{
   width:100%;
   max-width:1180px;
 
-  height:200px;              /* smaller */
+  height:240px;              /* smaller */
   background-image:url('Banner.png');
   background-repeat:no-repeat;
   background-position:center 20px;
@@ -162,9 +212,6 @@ font-weight:800;
   color:#ffffff;
   text-decoration:none;
 }
-
-.hero a:hover{text-decoration:underline}
-
 /* PROFILE PHOTO */
 .profile-pic{
 width:180px;
