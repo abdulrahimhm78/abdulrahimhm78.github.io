@@ -76,25 +76,25 @@ z-index:0;
 
 /* WATERMARK BANNER */
 header::after{
-content:"";
-position:absolute;
-top:0;
-left:50%;
-transform:translateX(-50%);
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
 
-width:1180px;
-height:240px;
+  width:100%;
+  max-width:1180px;     /* match container */
+  height:240px;
 
-background-image:url('Banner.png');
-background-repeat:no-repeat;
-background-position:center 30px;
-background-size:80% auto;
+  background-image:url('Banner.png');
+  background-repeat:no-repeat;
+  background-position:center 30px;
+  background-size:85% auto;
 
-opacity:0.22;
-pointer-events:none;
-z-index:0;
+  opacity:0.20;
+  pointer-events:none;
+  z-index:0;
 }
-
 /* KEEP ALIGNMENT SAME AS BODY */
 header .container{
 max-width:1180px;
