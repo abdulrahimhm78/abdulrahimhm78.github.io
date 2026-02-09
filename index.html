@@ -45,7 +45,36 @@ max-width:100%;
 --space-lg:28px;
 --space-xl:42px;
 }
+/* ===== BUTTON STYLE ===== */
+.btn{
+display:inline-block;
+padding:10px 16px;
+border-radius:8px;
+font-weight:700;
+text-decoration:none;
+border:2px solid #0a66c2;
+color:#0a66c2;
+background:#ffffff;
+transition:all .2s ease;
+}
 
+/* Hover */
+.btn:hover{
+background:#0a66c2;
+color:#ffffff;
+}
+
+/* Visited */
+.btn:visited{
+color:#0a66c2;
+}
+
+/* Active / Focus */
+.btn:focus,
+.btn:active{
+outline:none;
+box-shadow:0 0 0 3px rgba(10,102,194,0.25);
+}
 *{box-sizing:border-box}
 
 html{scroll-behavior:smooth}
@@ -243,10 +272,8 @@ height:150px;
           <li>Platform, Cloud, Data Engineering, API modernization</li>
           <li>Contract or Full-Time · Remote or US-Based</li>
         </ul>
-<a class="btn btn-secondary"
-   href="https://mail.google.com/mail/?view=cm&fs=1&to=abdulrahimhm78@gmail.com&su=Role%20Inquiry%20-%20Senior%20Scrum%20Master"
-   target="_blank" rel="noopener">
-  Email Role Details
+<a class="btn" href="https://mail.google.com/mail/?view=cm&fs=1&to=abdulrahimhm78@gmail.com" target="_blank" rel="noopener">
+Email Role Details
 </a>
         <div class="small-note">Include job description + location + target start date to speed up alignment.</div>
       </div>
